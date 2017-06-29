@@ -1,0 +1,164 @@
+﻿@model ChangTing.Singer.Models.SingerInfo
+@{
+    Layout = "~/Views/Shared/_Backstage.cshtml";
+    ViewBag.Title = "SingerListAdd";
+}
+
+@section SectionCss
+{
+    <link rel="stylesheet" href="~/Content/Singer/css/SingerListAdd_Admin.css"/>
+}
+
+<article class="page-container" style="overflow:hidden">
+    @using (Html.BeginForm("SingerListAdd_Admin", "Singer", FormMethod.Post, htmlAttributes: new {@*target = "_blank",*@ enctype = "multipart/form-data",
+        @id = "form-article-add",
+        @class = "form form-horizontal"
+    }))
+    {
+
+        <input type="hidden" value="@ViewBag.cg" id="myHiddenVar" />//操作结果存储
+        if (ViewBag.cg != null)
+        {
+            <script type="text/javascript">
+                 alert($('#myHiddenVar').val());
+            </script>
+        };
+
+        <div class="row cl">
+
+            <div class="col-xs-6 col-sm-5">
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-5"><span class="c-red">*</span>歌手名称：</label>
+                    <div class="formControls col-xs-8 col-sm-7 mb-15">
+                        @Html.TextBoxFor(Model => Model.Name, htmlAttributes: new
+                        {
+                            @class = "input-text",
+                            id = "Name",
+                            name = "Name"
+                        })
+                    </div>
+                    <div class="form-label col-xs-8 col-sm-8">
+                        <span class="c-red">@Html.ValidationMessageFor(Model => Model.Name)</span>
+                    </div>
+                </div>
+
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-5">歌手年龄：</label>
+                    <div class="formControls col-xs-5 col-sm-5 mb-15">
+                        @Html.TextBoxFor(Model => Model.Age, htmlAttributes: new
+                       {
+                           @class = "input-text",
+                           id = "Age",
+                           name = "Age",
+                           title="保密"
+                       })
+                    </div>
+                    <div class="form-label col-xs-8 col-sm-8">
+                        <span class="c-red">@Html.ValidationMessageFor(Model => Model.Age)</span>
+                    </div>
+                </div>
+
+                <div class="row cl">
+                    <label class="form-label col-xs-5 col-sm-5">歌手性别：</label>
+                    <div class="formControls col-xs-8 col-sm-7 skin-minimal">
+                        @{
+                            if (Model.Gender == 1)
+                            {
+                                <div class="check-box cl">
+                                    <input type="radio" id="radio-xingbie0" text="0" name="radio-xingbie" checked="" value="保密" />
+                                    <label for="radio-xingbie0">保密</label>
+                                </div>
+                                <div class="check-box col-xs-3 col-sm-3">
+                                    <input type="radio" id="radio-xingbie1" text="1" name="radio-xingbie" checked="checked" value="男" />
+                                    <label for="radio-xingbie1">男</label>
+                                </div>
+                                <div class="check-box col-xs-3 col-sm-3">
+                                    <input type="radio" id="radio-xingbie2" text="2" name="radio-xingbie" value="女">
+                                    <label for="radio-xingbie2">女</label>
+                                </div>
+                            }
+                            else if (Model.Gender == 2)
+                            {
+                                <div class="check-box cl">
+                                    <input type="radio" id="radio-xingbie0" text="0" name="radio-xingbie" value="保密" />
+                                    <label for="radio-xingbie0">保密</label>
+                                </div>
+                                <div class="check-box col-xs-3 col-sm-3">
+                                    <input type="radio" id="radio-xingbie1" text="1" name="radio-xingbie" value="男" />
+                                    <label for="radio-xingbie1">男</label>
+                                </div>
+                                <div class="check-box col-xs-3 col-sm-3">
+                                    <input type="radio" id="radio-xingbie2" text="2" name="radio-xingbie" checked="checked" value="女">
+                                    <label for="radio-xingbie2">女</label>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="cl">
+                                    <div class="check-box">
+                                        <input type="radio" id="radio-xingbie0" text="0" name="radio-xingbie" checked="checked" value="保密" />
+                                        <label for="radio-xingbie0">保密</label>
+                                    </div>
+                                </div>
+                                <div class="cl mt-15">
+                                    <div class="check-box col-xs-4 col-sm-4">
+                                        <input type="radio" id="radio-xingbie1" text="1" name="radio-xingbie" value="男" />
+                                        <label for="radio-xingbie1">男</label>
+                                    </div>
+                                    <div class="check-box col-xs-5 col-sm-4 ml-8">
+                                        <input type="radio" id="radio-xingbie2" text="2" name="radio-xingbie" value="女">
+                                        <label for="radio-xingbie2">女</label>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <label class="form-label">歌手头像：</label>
+            </div>
+            <div class="col-xs-5 col-sm-4">
+                <div class="formControls row cl">
+                    <div class="uploader-thum-container">
+                        <div class="image_container">
+                            <input type="file" class="my-file" id="file_upload" name="file_upload" value="@ViewBag.imgfile"  style="height:280px;width:280px;"/>
+                            <input type="hidden" name="df" id="df" value="@ViewBag.imgfile" />
+                            <img id="preview" name="preview" class="row cl" style="height:20em;width:20em;padding:0;margin:0;left:0;" src="@Model.HeadPortrait">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+        <label class="form-label col-xs-4 col-sm-2">歌手自我介绍：</label>
+        <div class="form-label col-xs-8 col-sm-8">
+            <span class="c-red">@Html.ValidationMessageFor(Model => Model.Introduce)</span>
+        </div>
+        <div class="row cl">
+            <div class="formControls col-xs-8 col-sm-9">
+                <script id="editor" name="editor" type="text/plain" style="height:400px;width:100%">
+                    @Html.Raw(ViewBag.editortext)
+                </script>
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                <button class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 提交</button>
+                <button onClick="removeIframe();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+        @Html.HiddenFor(Model => Model.SingerId)//存储歌手Id
+        @Html.HiddenFor(Model => Model.CreateDate)//存储创建时间
+        
+        
+}
+</article>
+@section SectionJs
+{
+    <script type="text/javascript" src="~/Content/Singer/js/SingerListAdd_Admin.js"></script>
+}

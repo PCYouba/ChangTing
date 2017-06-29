@@ -1,0 +1,65 @@
+body{
+	background-color: #F0F0F0;
+	font-size: 20px;
+}
+.cc {
+	position: relative;
+	float: right;
+	padding-right: 10%;
+}
+h1{
+	
+	margin-top: 30px;
+	margin-left: 40%;
+}
+.neibu {
+    position: relative;
+    margin-top: 10px;
+    /*opacity:0.5;*/ /*设置透明度*/
+    background-size: 100%;
+    width: 700px;
+    height: 600px;
+    margin: 30px auto 0 auto;
+    background-image: url(../img/q1.jpg);
+    border-radius: 20px;
+}
+    
+.login-one {
+	padding-top: 90px;
+	padding-left: 160px;
+}
+			
+.login-two {
+	display: inline;
+	padding-top: 100px;
+	padding-left: 300px;
+	height: 100px;
+	width: 50px;
+}
+			
+.login-one input {
+	height: 25px;
+	width: 300px;
+	margin-top: 30px;
+}
+			
+.login-one img {
+	height: 30px;
+	width: 100px;
+	margin-top: 30px;
+}
+			
+.login-two input {
+	height: 25px;
+	width: 100px;
+	margin-top: 60px;
+	border-radius: 5px;
+	border-style: none;
+	margin-left: 50px;
+	background-color: white;
+	border: 1px solid black;
+}
+span{
+    font-size:14px;
+    color:red;
+}

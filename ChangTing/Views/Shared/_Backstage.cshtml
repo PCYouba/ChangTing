@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+
+
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/static/h-ui.admin/css/H-ui.admin.css" />@*暂无影响*@
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/lib/Hui-iconfont/1.0.7/iconfont.css" />@*暂无影响*@
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/lib/icheck/icheck.css" />@*暂无影响*@
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/static/h-ui.admin/skin/default/skin.css" id="skin" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/static/h-ui.admin/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/lib/webuploader/0.1.5/webuploader.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/lib/zTree/v3/css/zTreeStyle/zTreeStyle.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="~/Content/Hui/lib/html5.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/respond.min.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/PIE_IE678.js"></script>
+    <![endif]-->
+
+
+    <script type="text/javascript" src="~/Content/Hui/lib/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/icheck/jquery.icheck.min.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/static/h-ui/js/H-ui.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/IfIframe.js"></script>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+
+    <script type="text/javascript" src="~/Content/Hui/lib/jquery/1.9.1/jquery.min.js"></script>
+
+   @RenderSection("SectionCss", required: false)    
+
+</head>
+<body>
+    <div style="float:left;width:100%" class="row cl">
+        <div  class="row cl" style="min-height:33em;padding:8px 0 0 0;">
+            @RenderBody()
+        </div>
+       
+        <footer class="footer mt-20" style="margin-left:26px">
+            <div class="container-fluid">
+                <nav> 
+                    <a href="#" target="_blank">关于我们</a> <span class="pipe">|</span> 
+                    <a href="#" target="_blank">联系我们</a> <span class="pipe">|</span> 
+                    <a href="#" target="_blank">法律声明</a> 
+                </nav>
+                <p>
+                    Copyright &copy;2016 H-ui.net All Rights Reserved. <br>
+                    <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">京ICP备1000000号</a><br>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!--_footer 作为公共模版分离出去-->
+    <script type="text/javascript" src="~/Content/Hui/lib/layer/2.1/layer.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/zTree/v3/js/jquery.ztree.all-3.5.min.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/icheck/jquery.icheck.min.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/static/h-ui/js/H-ui.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/static/h-ui.admin/js/H-ui.admin.js"></script>
+    <!--/_footer /作为公共模版分离出去-->
+    <!--请在下方写此页面业务相关的脚本-->
+    <script type="text/javascript" src="~/Content/Hui/lib/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/webuploader/0.1.5/webuploader.min.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/ueditor/1.4.3/ueditor.config.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
+    <script type="text/javascript" src="~/Content/Hui/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+
+    @RenderSection("SectionJs", required: false)
+
+</body>
+</html>
+    

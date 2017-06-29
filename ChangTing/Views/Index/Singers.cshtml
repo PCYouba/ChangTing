@@ -1,0 +1,64 @@
+﻿@model IList<ChangTing.Singer.Models.SingerInfo>
+@{
+    Layout = "~/Views/Shared/_moban.cshtml";
+}
+@section SectionCss
+{
+    @* 自己的css样式 *@
+    <link href="~/Qiantai/Singer/css/content.css" rel="stylesheet" />
+}
+
+@using (Html.BeginForm("Json", "JsonGet", FormMethod.Post))
+{<div class="content-left">
+
+    <img src="" alt="广告" />
+</div>
+
+<div class="content-right">
+    <div class="hotsinger">
+        <p>热门歌手</p>
+
+        <ul class="hotsinger-wrap">
+@{
+    foreach (ChangTing.Singer.Models.SingerInfo item in @Model)
+    {
+            <li class="hotsinger-list">
+                <img src="@item.HeadPortrait" class="singer-photo" alt="@item.SingerId" />
+                <a href="~/Views/Index/SingerXQ.cshtml?singerid=@item.SingerId"> <span class="singer-name">@item.Name</span> </a>
+            </li>
+
+    }
+
+}
+          
+        </ul>
+
+    </div>
+
+    <div class="ruzhusinger">
+        <div class="ruzhu-wrap">
+            <div class="ruzhu-list">入驻歌手</div>
+            <div class="ruzhu-list1"><a href="~/Index/RuzhuSinger">更多>></a></div>
+        </div>
+        <!--<ul class="ruzhu-wrap">
+            <li class="ruzhu-list">入驻歌手</li>
+            <li class="ruzhu-list1"><a href="#">更多>></a></li>
+        </ul>-->
+
+        <ul class="hotsinger-wrap">
+@{
+    foreach (ChangTing.Singer.Models.SingerInfo item in @Model)
+    {
+       
+            <li class="hotsinger-list">
+                <img src="@item.HeadPortrait" class="singer-photo" alt="@item.SingerId" />
+                <a href="~/Views/Index/SingerXQ.cshtml?singerid=@item.SingerId"> <span class="singer-name">@item.Name</span> </a>
+            </li>
+        }
+    }
+
+        </ul>
+    </div>
+
+</div>
+    }

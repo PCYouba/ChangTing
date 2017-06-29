@@ -1,0 +1,111 @@
+﻿@model IList<ChangTing.UI.Viewmodels.UIInfo>
+
+@{
+    ViewBag.Title = "首页";
+}
+@section SectionCss
+{
+    <link rel="stylesheet" type="text/css" href="~/Content/UI/css/EnterSinger.css" />
+}
+
+
+<!--内容-->
+<div class="content">
+
+    <div class="enter-wrap">
+        <div class="enter-top">
+            <span>@ViewBag.leibie</span>
+        </div>
+        <div class="enter-contion">
+            @{
+                foreach (ChangTing.UI.Viewmodels.UIInfo item in @ViewBag.UIMusic)
+                {
+                    <ul class="contion-wrap">
+                        <li class="contion-list">
+                            <img src="@item.Image" alt="图片"  />
+                            <p><a href="">歌曲名字：@item.RealName</a></p>
+                        </li>
+                    </ul>
+                }
+            }
+           
+        </div>
+
+        <div id="content-fenye">
+            
+            <ul>
+                
+                <li id="content-fenye-prev" >&lt; 上一页</li>
+                <li>1</li>
+                <li id="content-fenye-next">下一页 &gt;</li>
+            </ul>
+
+            <script type="text/javascript">
+					var contentFenye = document.getElementById('content-fenye');
+					var fenyeLi = contentFenye.getElementsByTagName('li');
+					var num = 1;
+
+					function fnTab() {
+
+						for(var i = 0; i < fenyeLi.length; i++) {
+
+							if(num == 1) {
+								fenyeLi[0].style.disabled = 'disabled';
+								fenyeLi[0].style.color = '#cacaca';
+							} else {
+								fenyeLi[0].style.disabled = '';
+								fenyeLi[0].style.color = '';
+							}
+
+							if(Number(fenyeLi[i].innerHTML)) {
+
+								fenyeLi[i].className = '';
+								fenyeLi[i].index = i;
+
+								fenyeLi[num].className = 'content-fenye-bg';
+
+								fenyeLi[i].onmousemove = function() {
+									this.style.background = 'cornflowerblue';
+									this.style.color = '#fff';
+								}
+
+								fenyeLi[i].onmouseout = function() {
+									this.style.background = '';
+									this.style.color = '';
+								}
+
+							}
+
+						}
+
+					}
+					fnTab();
+					for(var i = 0; i < fenyeLi.length; i++) {
+
+						if(Number(fenyeLi[i].innerHTML)) {
+
+							fenyeLi[i].index = i;
+
+							fenyeLi[i].onclick = function() {
+								num = this.index;
+								fnTab();
+							}
+
+						}
+					}
+            </script>
+        
+           
+        
+        
+        
+        
+        
+        
+        </div>
+
+
+    </div>
+
+
+

@@ -1,0 +1,93 @@
+﻿@model IList<ChangTing.Music.Models.CategoryInfo>
+@{
+    Layout = "~/Views/Shared/_Backstage.cshtml";
+    ViewBag.Title = "CategoryList";
+}
+
+@section SectionCss
+{
+    @* 自己的css样式 *@
+    <link href="~/Content/Category/css/CategoryList_Admin.css" rel="stylesheet" />
+}
+<div style="margin:0 0 0 46px">
+    <div class="pos-r">
+        <nav class="breadcrumb">
+            <i class="Hui-iconfont">&#xe67f;</i>
+            首页
+            <span class="c-gray en">&gt;</span>
+            音乐管理
+            <span class="c-gray en">&gt;</span>
+            音乐类别
+            <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新">
+                <i class="Hui-iconfont">&#xe68f;</i>
+            </a>
+        </nav>
+        <div class="page-container">
+            <div class="cl pd-5 bg-1 bk-gray mt-20 Hui-asidezdy">
+                <span class="l Hui-asidezdyys">
+                    <a href="javascript:;" onclick=datadel() class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+                    <a class="btn btn-primary radius" _href="../Music/CategoryListAdd_Admin?categoryid=0" data-title="添加类别" href="javascript:void(0)"><i class="Hui-iconfont">&#xe600;</i> 添加类别</a>
+                </span>
+                <span class="r">共有数据：<strong>@Model.Count</strong> 条</span>
+            </div>
+            <div class="mt-20" style="font-size:48px">
+                <table class="table table-border table-bordered table-bg table-hover table-sort">
+                    <thead>
+                        <tr class="text-c">
+                            <th width="30"><input name="" type="checkbox" value=""></th>
+                            <th width="40">音乐类别ID</th>
+                            <th width="50">音乐类别名称</th>
+                            <th width="40">排序</th>
+                            <th width="60">播放次数</th>
+                            <th width="60">显示状态</th>
+                            <th width="60">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{foreach (ChangTing.Music.Models.CategoryInfo item in @Model)
+                        {
+                                <tr class="text-c va-m">
+                                <td><input name="piliang" type="checkbox" value="@item.CategoryId"></td>@*选择按钮*@
+                                <td>@item.CategoryId</td>@*ID*@
+                                <td>@item.NickName</td>@*姓名*@
+                                <td>@item.Number</td >@*排序*@
+                                <td>@item.Frequency</td>@*打开次数*@
+                                @{
+                                    if (item.Display == 0)
+                                    {
+                                        <td>正常</td>
+                                    }
+                                    else if (item.Display == 1)
+                                    {
+                                        <td>置顶</td>
+                                    }
+                                    else
+                                    {
+                                        <td>不显示</td>
+                                    }
+                                }@*显示状态*@
+                                <td class="td-manage Hui-asidezdy">
+                                    <span class="Hui-asidezdyys">
+                                        <a style="text-decoration:none" class="ml-5" data-title="修改信息" _href="../Music/CategoryListAdd_Admin?categoryid=@item.CategoryId" href="javascript:void(0)" title="编辑">
+                                            <i class="Hui-iconfont">&#xe6df;</i>@*"_href不能加"*@
+                                        </a>
+                                    </span>
+                                    <a style="text-decoration:none" class="ml-5" onClick="product_del(this, @item.CategoryId)" href="javascript:;" title="删除">
+                                        <i class="Hui-iconfont">&#xe6e2;</i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section SectionJs
+{
+    @* 自己的Js样式 *@
+    <script type="text/javascript" src="~/Content/Category/js/CategoryList_Admin.js"></script>
+}

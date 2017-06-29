@@ -1,0 +1,216 @@
+*{	
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+li{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+h3{
+	font-size: 24px;
+	font-weight: normal;
+	
+	border-bottom: 2px solid #3766a9;
+	padding-bottom: 20px;
+}
+.content{
+	border: 1px solid #d3d3d3;
+    width:1000px;
+    margin:auto;
+}
+.content .p-wrap{
+	width: 700px;
+	height: 600px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+}
+.content .p-wrap h3{
+	font-size: 24px;
+	font-weight: normal;
+	
+	border-bottom: 2px solid #3766a9;
+	padding-bottom: 20px;
+}
+.p-wrap-nav{
+	width: 700px;
+	height: 39px;
+	background: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-top: 2px solid #cccccc;
+	margin-bottom: 30px;
+}
+.p-wrap-nav ul{
+	
+}
+.p-wrap-nav ul li{
+margin-top:0px;
+	float: left;
+	line-height: 39px;
+	width: 100px;
+	height: 38px;
+	/*margin-left: 25px;*/
+	
+	text-align: center;
+}
+.p-wrap-nav ul li:first-child{
+	margin-left: 0;
+}
+.p-wrap-nav ul li a{
+	font-size: 16px;
+	color: #333333;
+	font-family: "微软雅黑";
+	
+}
+
+.p-wrap-nav ul li:hover{
+	margin-top:-2px;
+	
+	border-top: 2px #3766a9 solid;
+	border-bottom: 1px white;
+	background: #fafafa;
+}
+.frm-wrap{
+	float: left;
+	width: 350px;
+	height: 330px;
+	/*border: 1px solid yellow;*/
+	position: relative;
+}
+.frm-wrap .itm{
+	width: 350px;
+	height: 30px;
+	/*background: pink;*/
+	margin-bottom: 10px;
+}
+.frm-wrap .itm .u-txt{
+	width: 300px;
+	height: 30px;
+	
+}
+
+.frm-wrap .jianj{
+	margin-bottom: 10px;
+	/*border: 1px solid red;*/
+	position: relative;
+}
+.frm-wrap .jianj .lab{
+	position: absolute;
+	top: 40px;
+}
+.frm-wrap .jianj .area{
+	margin-left: 46px;
+	resize: none;
+	width: 300px;
+	height: 135px;
+	
+}
+.frm-wrap .jianj .zs{
+	position: absolute;
+    bottom: 8px;
+    right: 10px;
+    color: #D0D0D0;
+}
+.frm-wrap .sex{
+	margin-bottom: 10px;
+	width: 350px;
+	min-height: 32px;
+	/*border: 1px solid red;*/
+	
+}
+.frm-wrap .sex .lab{
+	position: absolute;
+}
+.frm-wrap .sex .sex-xb{
+	margin-left: 20px;
+	
+}
+.frm-wrap .sex .sex-xb .check{
+	float: left;
+	margin-left: 30px;
+	
+}
+.date-wrap{
+	/*border: 1px solid red;*/
+	margin-bottom: 10px;
+
+}
+.date-wrap .date-input{
+	height: 28px;
+	margin-left: 4px;
+}
+.region{
+	width: 300px;
+	height: 50px;
+	/*border: 1px solid red;*/
+}
+.region .region-dq{
+	/*background: pink;*/
+}
+.region .region-sf,.region .region-cs{
+	height: 30px;
+}
+.sub{
+	padding-top: 25px;
+}
+.sub .btn-info{
+	
+	margin-left: 40px;
+	width: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.p-wrap .avatar{
+	float: left;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    margin-left: 15px;
+    border: 1px solid lightgray;
+}
+.p-wrap .avatar img{
+	width: 138px;
+	height: 138px;
+	border: 0 ;
+}
+
+.p-wrap .avatar .btm{
+	
+	background: #8e8e8e;
+    opacity: 0.8;
+    display: block;
+    position: absolute;
+    width: 139px;
+    height: 26px;
+    left: 0;
+    bottom: 0;
+}
+.p-wrap .avatar .upload{
+	color: #fff;
+    text-align: center;
+    line-height: 26px;    
+    display: block;
+    position: absolute;
+    width: 138px;
+    height: 26px;
+    left: 0;
+    bottom: 0;
+}
+.p-wrap .avatar .upload:hover{
+	background: gray;
+}

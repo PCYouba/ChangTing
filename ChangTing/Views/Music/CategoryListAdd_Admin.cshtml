@@ -1,0 +1,185 @@
+﻿@model ChangTing.Music.Models.CategoryInfo
+@{
+    Layout = "~/Views/Shared/_Backstage.cshtml";
+    ViewBag.Title = "CategoryListAdd_Admin";//音乐类别
+}
+
+@section SectionCss
+{
+    <link href="~/Content/Category/css/CategoryListAdd_Admin.css" rel="stylesheet" />
+}
+
+<article class="page-container" style="overflow:hidden">
+    @using (Html.BeginForm("CategoryListAdd_Admin", "Music", FormMethod.Post, htmlAttributes: new
+    {
+        enctype = "multipart/form-data",
+        @id = "form-article-add",
+        @class = "form form-horizontal"
+    }))
+    {
+        <input type="hidden" value="@ViewBag.cg" id="myHiddenVar" />//操作结果存储
+        
+
+        @Html.HiddenFor(Model => Model.CategoryId)//存储类别Id
+        @Html.HiddenFor(Model => Model.CreateDate)//存储创建时间
+
+        if (ViewBag.cg != null)
+        {
+            <script type="text/javascript">
+                alert($('#myHiddenVar').val());
+            </script>
+        };
+
+        <div class="row cl">
+
+            <div class="row cl">
+                <div class="col-xs-6 col-sm-5">
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-5"><span class="c-red">*</span>排序：</label>
+
+                        <div class="col-xs-8 col-sm-7 mb-15">
+
+                            @Html.TextBoxFor(Model => Model.Number, htmlAttributes: new
+                           {
+                               @class = "input-text lest-text",
+                               id = "Number",
+                               name = "Number"
+                           })
+                           
+                            <div id="list-text-button">
+                                <div id="list-text-button-sanjiao" class=""></div>
+                            </div>
+
+                            <div id="list-textlist">
+                                <div>
+                                    @for (int i = ViewBag.NumberMax; i >0; i--)
+                                    {
+                                        <a value="@i">@i</a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-5">
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-5"><span class="c-red">*</span>音乐类别名称：</label>
+                        <div class="formControls col-xs-8 col-sm-7 mb-15">
+                            @Html.TextBoxFor(Model => Model.NickName, htmlAttributes: new
+                       {
+                           @class = "input-text",
+                           id = "NickName",
+                           name = "NickName"
+                       })
+                        </div>
+                        <div class="form-label col-xs-8 col-sm-8">
+                            <span class="c-red">@Html.ValidationMessageFor(Model => Model.NickName)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cl">
+                <div class="col-xs-6 col-sm-5">
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-5"><span class="c-red">*</span>显示状态：</label>
+                        <div class="formControls col-xs-8 col-sm-7 skin-minimal">
+                            @{
+                                if (Model.Display == 1)
+                                {
+                                    <div class="cl">
+                                        <div class="check-box col-xs-5 col-sm-5">
+                                            <input type="radio" id="radio-zhuangtai0" name="radio-zhuangtai" checked="" value="0" />
+                                            <label for="radio-zhuangtai0">正常</label>
+                                        </div>
+                                        <div class="check-box col-xs-5 col-sm-5">
+                                            <input type="radio" id="radio-zhuangtai1" name="radio-zhuangtai" checked="checked" value="1" />
+                                            <label for="radio-zhuangtai1">置顶</label>
+                                        </div>
+                                    </div>
+                                    <div class="check-box col-xs-6 col-sm-6">
+                                        <input type="radio" id="radio-zhuangtai2" name="radio-zhuangtai" value="2">
+                                        <label for="radio-zhuangtai2">不显示</label>
+                                    </div>
+                                }
+                                else if (Model.Display == 2)
+                                {
+                                    <div class="cl">
+                                        <div class="check-box col-xs-5 col-sm-5">
+                                            <input type="radio" id="radio-zhuangtai0" name="radio-zhuangtai" value="0" />
+                                            <label for="radio-zhuangtai0">正常</label>
+                                        </div>
+                                        <div class="check-box col-xs-5 col-sm-5">
+                                            <input type="radio" id="radio-zhuangtai1" name="radio-zhuangtai" value="1" />
+                                            <label for="radio-zhuangtai1">置顶</label>
+                                        </div>
+                                    </div>
+                                    <div class="cl mt-15">
+                                        <div class="check-box col-xs-6 col-sm-6">
+                                            <input type="radio" id="radio-zhuangtai2" name="radio-zhuangtai" checked="checked" value="2">
+                                            <label for="radio-zhuangtai2">不显示</label>
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="cl">
+                                        <div class="check-box col-xs-5 col-sm-5">
+                                            <input type="radio" id="radio-zhuangtai0" name="radio-zhuangtai" checked="checked" value="0" />
+                                            <label for="radio-zhuangtai0">正常</label>
+                                        </div>
+                                        <div class="check-box col-xs-5 col-sm-5">
+                                            <input type="radio" id="radio-zhuangtai1" name="radio-zhuangtai" value="1" />
+                                            <label for="radio-zhuangtai1">置顶</label>
+                                        </div>
+                                    </div>
+                                    <div class="cl mt-15">
+                                        <div class="check-box col-xs-6 col-sm-6">
+                                            <input type="radio" id="radio-zhuangtai2" name="radio-zhuangtai" value="2">
+                                            <label for="radio-zhuangtai2">不显示</label>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-5">
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-5"><span class="c-red">*</span>播放次数：</label>
+                        <div class="formControls col-xs-8 col-sm-7 mb-15">
+                            @Html.TextBoxFor(Model => Model.Frequency, htmlAttributes: new
+                       {
+                           @class = "input-text",
+                           id = "Frequency",
+                           name = "Frequency"
+                       })
+                        </div>
+                        <div class="form-label col-xs-8 col-sm-8">
+                            <span class="c-red">@Html.ValidationMessageFor(Model => Model.Frequency)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-6 col-sm-offset-5">
+                <button class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 提交</button>
+                <button onClick="removeIframe();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+
+                                }
+
+</article>
+
+@section SectionJs
+{
+    <script type="text/javascript" src="~/Content/Category/js/CategoryListAdd_Admin.js"></script>
+
+    @*弹出框js*@
+    <script src="~/Content/Hui/lib/bootstrap-modal/2.2.4/bootstrap-modal.js"></script>
+    <script src="~/Content/Hui/lib/bootstrap-modal/2.2.4/bootstrap-modalmanager.js"></script>
+}

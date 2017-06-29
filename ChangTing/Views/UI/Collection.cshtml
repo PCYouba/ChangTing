@@ -1,0 +1,88 @@
+﻿@model IList<ChangTing.Users.ViewModels.CollectionViewInfo>
+@{
+    ViewBag.Title = "个人收藏";
+
+}
+
+@section SectionCss
+{
+    <link rel="stylesheet" type="text/css" href="~/Content/Collection/css/public.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Collection/css/geren.css" />
+}
+   
+    <div class="foot">
+        <img data-src="holder.js/200x200" class="img-thumbnail touxiang" alt="200x200" style="width: 200px; height: 200px;" src="@ViewBag.User.HeadPortrait" data-holder-rendered="true">
+        <span class="genghua">更换头像</span>
+
+        <span class="user">@ViewBag.User.NickName</span>
+
+        <input type="button" class="anniu" value="编辑个人资料" onclick="" />
+
+        <div class="xian"></div>
+
+        <ul class="foot-list">
+            <li><a href="">0</a><span>动态</span></li>
+            <li><a href="">3</a><span>关注</span></li>
+            <li><a href="">0</a><span>粉丝</span></li>
+        </ul>
+
+        <div class="adress">所在地区：@ViewBag.Region[0]省 @ViewBag.Region[1]市</div>
+        <div class="shejiao">
+            社交网络：
+            <a href=""><img src="~/Content/Collection/img/ooopic_1496798857.png" alt="微博" class="weibo" /></a>
+            <a href=""><img src="~/Content/Collection/img/ooopic_1496798895.png" alt="QQ" class="qq" /></a>
+        </div>
+
+        <div class="gedan">
+            我收藏的歌曲（@Model.Count）
+        </div>
+
+        <hr class="gedan-xian" />
+
+        @{
+            foreach (ChangTing.Users.ViewModels.CollectionViewInfo item in @Model)
+            {
+                <div class="gedan-music">
+                    <a href="~/Views/UI/zhuanji?id=@item.AlbumId" class="xin"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span></a>
+
+                    @if (@item.Frequency > -1)
+                    {
+                        <div class="bofang">
+                            <span class="glyphicon glyphicon-headphones erji" aria-hidden="true"><span class="ling">@item.Frequency</span></span>
+                            <a onClick='ply(this)' _href="@item.Path" href="javascript:void(0)" title="播放" class="bofang-icon"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></a>
+                        </div>
+                    <span class="bofang-wenzi">@string.Format("{0}喜欢的音乐", @item.LoginName) </span>
+                    }
+                    else
+                    {
+                        <span class="bofang-wenzi">@string.Format("{0}喜欢的专辑", @item.LoginName) </span>
+                    }
+                </div>
+            }
+        }
+    </div>
+
+    <script type="text/javascript">
+        var user = document.querySelector('.user');
+        var lv = document.querySelector('.lv');
+
+        var uW = user.offsetWidth;
+    </script>
+
+
+
+    <div style="">
+        <audio id="bfq" src="" _volume="0.8"></audio>
+        @Html.Partial("_music", "Shared")
+    </div>
+    <script src="~/Content/_music/js/_music.js" type="text/javascript" charset="utf-8"></script>
+    @section SectionJs
+{
+        @* 自己的Js样式 *@
+        <script>
+            function ply(main) {
+                $('#bfq').attr('src', "/Content/_music/mp3/" + $(main).attr('_href'));
+                play();
+            }
+        </script>
+    }

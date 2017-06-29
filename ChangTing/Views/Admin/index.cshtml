@@ -1,0 +1,139 @@
+﻿@model ChangTing.Admin.Models.AdminInfo
+@{
+    ViewBag.Title = "管理员模板";
+    Layout = null;
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit">
+    <!--为多内核浏览器默认使用  急速内核-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--网站运营商路由被攻破乱七八糟的广告 不百分百的防止  不做任何代理 不让任何广告内置-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="~/Content/Hui/lib/html5.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/respond.min.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/lib/PIE_IE678.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/static/h-ui.admin/css/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/lib/Hui-iconfont/1.0.7/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/lib/icheck/icheck.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/static/h-ui.admin/skin/default/skin.css" id="skin" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Hui/static/h-ui.admin/css/style.css" />
+    <!--[if IE 6]>
+    <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+
+    <title>畅听音乐后台管理</title>
+</head>
+<body>
+    <header class="navbar-wrapper">
+        <div class="navbar navbar-fixed-top">
+            <div class="container-fluid cl">
+                <a class="logo navbar-logo f-l mr-10 hidden-xs" href="../Admin/index">畅听音乐后台管理</a> <a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/aboutHui.shtml">  </a> <span class="logo navbar-slogan f-l mr-10 hidden-xs">v1.1</span> <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
+                <nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
+                    <ul class="cl">
+                        <li>@(Model.RealName)欢迎您</li>
+                        <li id="menu-product" class="dropDown dropDown_hover">
+                            <a href="#" class="dropDown_A">@Model.LoginName <i class="Hui-iconfont">&#xe6d5;</i></a>
+                            <ul class="dropDown-menu menu radius box-shadow Hui-asidezdy">
+                                <li class="Hui-asidezdyys"><a _href="/Admin/password" data-title="修改密码" href="javascript:void(0)">修改密码</a></li>
+                                <li><a href="/Admin/ifdb">退出</a></li>
+                            </ul>
+                        </li>
+                        <li id="Hui-skin" class="dropDown right dropDown_hover">
+                            <a href="javascript:;" class="dropDown_A" title="换肤"><i class="Hui-iconfont" style="font-size:18px">&#xe62a;</i></a>
+                            <ul class="dropDown-menu menu radius box-shadow">
+                                <li><a href="javascript:;" data-val="default" title="默认（黑色）">默认（黑色）</a></li>
+                                <li><a href="javascript:;" data-val="blue" title="蓝色">蓝色</a></li>
+                                <li><a href="javascript:;" data-val="green" title="绿色">绿色</a></li>
+                                <li><a href="javascript:;" data-val="red" title="红色">红色</a></li>
+                                <li><a href="javascript:;" data-val="yellow" title="黄色">黄色</a></li>
+                                <li><a href="javascript:;" data-val="orange" title="绿色">橙色</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <aside class="Hui-aside">
+        <div class="menu_dropdown bk_2">
+            <dl id="menu-admin">
+                <dt><i class="Hui-iconfont">&#xe61d;</i>管理员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd>
+                    <ul>
+                        <li><a _href="../Users/MessagesList_Admin?GradeLevel=0" data-title="公告列表" href="javascript:void(0)">公告列表</a></li>
+                        <li><a _href="../Users/MessagesListReply_Admin?MessagesId=0" data-title="发布公告" href="javascript:void(0)">发布公告</a></li>
+                        <li><a _href="../Users/MessagesList_Admin?GradeLevel=1" data-title="反馈列表" href="javascript:void(0)">反馈列表</a></li>
+                        <li><a _href="../Users/MessagesList_Admin?GradeLevel=-1" data-title="全部消息" href="javascript:void(0)">全部消息</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl id="menu-member">
+                <dt><i class="Hui-iconfont">&#xe616;</i>歌手管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd>
+                    <ul>
+                        <li><a _href="../Singer/SingerList_Admin" data-title="歌手列表" href="javascript:void(0)">歌手列表</a></li>
+                        <li><a _href="../Singer/SingerListAdd_Admin?singerid=0" data-title="添加歌手" href="javascript:void(0)">添加歌手</a></li>
+                        <li><a _href="../Singer/AlbumList_Admin?singerid=0" data-title="专辑列表" href="javascript:void(0)">专辑列表</a></li>
+                        <li><a _href="../Singer/AlbumListAdd_Admin?albumid=0" data-title="添加专辑" href="javascript:void(0)">添加专辑</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl id="menu-product">
+                <dt><i class="Hui-iconfont">&#xe6b6;</i>歌曲管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd>
+                    <ul>
+                        <li><a _href="../Music/CategoryList_Admin" data-title="音乐类别" href="javascript:void(0)">音乐类别</a></li>
+                        <li><a _href="../Music/CategoryListAdd_Admin?categoryid=0" data-title="添加类别" href="javascript:void(0)">添加类别</a></li>
+                        <li><a _href="../Music/StorageList_Admin?albumid=0" data-title="音乐列表" href="javascript:void(0)">音乐列表</a></li>
+                        <li><a _href="../Music/StorageListAdd_Admin?storageid=0" data-title="添加音乐" href="javascript:void(0)">添加音乐</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl id="menu-product">
+                <dt><i class="Hui-iconfont">&#xe60d;</i>用户管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd>
+                    <ul>
+                        <li><a _href="../Users/UsersList_Admin" data-title="用户列表" href="javascript:void(0)">用户列表</a></li>
+                        <li><a _href="../Users/CollectionList_Admin?userid=0" data-title="用户收藏" href="javascript:void(0)">用户收藏</a></li>
+                        <li><a _href="../Users/FeedBackList_Admin" data-title="用户反馈" href="javascript:void(0)">用户反馈</a></li>
+                        <li><a _href="../Users/CommentList_Admin?userid=0" data-title="用户评论" href="javascript:void(0)">用户评论</a></li>
+                        @*<li><a _href="../Users/MessagesList_Admin?GradeLevel=2" data-title="用户发信" href="javascript:void(0)">用户发信</a></li>*@
+                    </ul>
+                </dd>
+            </dl>
+            
+        </div>
+    </aside>
+    <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+    <section class="Hui-article-box">
+        <div id="Hui-tabNav" class="Hui-tabNav hidden-xs">
+            <div class="Hui-tabNav-wp">
+                <ul id="min_title_list" class="acrossTab cl">
+                    <li class=""><span title="我的桌面" data-href="welcome">主页</span><em></em></li>
+                </ul>
+            </div>
+            <div class="Hui-tabNav-more btn-group"><a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d4;</i></a><a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d7;</i></a></div>
+        </div>
+        <div id="iframe_box" class="Hui-article">
+            <div class="show_iframe">
+                <div style="display:none" class="loading"></div>
+                <iframe scrolling="yes" frameborder="0" src="welcome"></iframe>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="~/Content/Hui/lib/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/static/h-ui/js/H-ui.js"></script>
+    <script type="text/javascript" src="~/Content/Hui/static/h-ui.admin/js/H-ui.admin.js"></script>
+</body>
+</html>

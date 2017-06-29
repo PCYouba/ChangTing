@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangTing", "ChangTing\ChangTing.csproj", "{3D3BEC4D-C4CD-43C9-A9E6-4F98A3F6CD90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{5808C298-5EE3-41A3-B7CE-1C4141F216A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admin", "Admin\Admin.csproj", "{DA3308E4-F63A-49B1-B866-8A057E1FED16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Index", "Index\Index.csproj", "{D6E7987C-2924-4C25-A1C9-8EB91D08DAA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music", "Music\Music.csproj", "{90BB487B-F418-4D97-B4E7-29C596E06C2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singer", "Singer\Singer.csproj", "{20BD1CA6-BB12-494D-9EA0-B835FA0A87DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users", "Users\Users.csproj", "{E3DA7329-6FD4-43E2-9522-2FE84408DD76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{91A7ABF7-D4A6-483F-B985-AA337FB5D6A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D3BEC4D-C4CD-43C9-A9E6-4F98A3F6CD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D3BEC4D-C4CD-43C9-A9E6-4F98A3F6CD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D3BEC4D-C4CD-43C9-A9E6-4F98A3F6CD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D3BEC4D-C4CD-43C9-A9E6-4F98A3F6CD90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5808C298-5EE3-41A3-B7CE-1C4141F216A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5808C298-5EE3-41A3-B7CE-1C4141F216A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5808C298-5EE3-41A3-B7CE-1C4141F216A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5808C298-5EE3-41A3-B7CE-1C4141F216A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA3308E4-F63A-49B1-B866-8A057E1FED16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA3308E4-F63A-49B1-B866-8A057E1FED16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA3308E4-F63A-49B1-B866-8A057E1FED16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA3308E4-F63A-49B1-B866-8A057E1FED16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E7987C-2924-4C25-A1C9-8EB91D08DAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E7987C-2924-4C25-A1C9-8EB91D08DAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E7987C-2924-4C25-A1C9-8EB91D08DAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E7987C-2924-4C25-A1C9-8EB91D08DAA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90BB487B-F418-4D97-B4E7-29C596E06C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BB487B-F418-4D97-B4E7-29C596E06C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BB487B-F418-4D97-B4E7-29C596E06C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BB487B-F418-4D97-B4E7-29C596E06C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20BD1CA6-BB12-494D-9EA0-B835FA0A87DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20BD1CA6-BB12-494D-9EA0-B835FA0A87DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20BD1CA6-BB12-494D-9EA0-B835FA0A87DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20BD1CA6-BB12-494D-9EA0-B835FA0A87DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3DA7329-6FD4-43E2-9522-2FE84408DD76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3DA7329-6FD4-43E2-9522-2FE84408DD76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3DA7329-6FD4-43E2-9522-2FE84408DD76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3DA7329-6FD4-43E2-9522-2FE84408DD76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A7ABF7-D4A6-483F-B985-AA337FB5D6A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A7ABF7-D4A6-483F-B985-AA337FB5D6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A7ABF7-D4A6-483F-B985-AA337FB5D6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A7ABF7-D4A6-483F-B985-AA337FB5D6A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

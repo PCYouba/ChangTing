@@ -1,0 +1,263 @@
+﻿@{
+    ViewBag.Title = "首页";
+}
+
+@section SectionCss
+{
+    <link rel="stylesheet" type="text/css" href="~/Content/UI/css/PersonalSetting.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/UI/css/home.css" />
+}
+
+<!--内容-->
+<div class="content">
+    <div class="p-wrap">
+        <h3>个人设置</h3>
+        <div class="p-wrap-nav">
+            <ul>
+
+
+                <li>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="" data-whatever="" style="background: #f8f8f8;
+	border: none;
+	color: black;
+	outline: none;
+	border-style: none;
+	font-family: default;">
+基本设置
+</button>
+</li>
+<li>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="" style="background: #f8f8f8;
+	border: none;
+	color: black;
+	outline: none;
+	border-style: none;
+	font-family: default;">
+                        意见反馈
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <!--<h4 class="modal-title" id="exampleModalLabel">意见反馈</h4>-->
+                        <h4>意见反馈</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="control-label">任何产品中的问题，欢迎反馈给我们</label>
+                                <textarea class="form-control form-tarea" id="message-text" placeholder="请输入反馈内容"></textarea>
+
+
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="control-label"></label>
+
+                                <label for="recipient-name" class="control-label">请留下联系方式</label>
+                                <input type="text" class="form-control" id="recipient-name" placeholder="请留下联系方式(电话，qq,邮箱)">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button id="fk" type="button" class="btn btn-primary">发送反馈</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var fk = document.getElementById("fk");
+            var from_fk = document.getElementById("message-text");
+            var lx = document.getElementById("recipient-name");
+
+            fk.onclick = function () {
+                if (from_fk.value == '') {
+                    alert("请输入反馈内容");
+                    return;
+                } else if (lx.value == '') {
+                    alert("请输入您的联系方式");
+                    return;
+                } else {
+                    alert("发送成功");
+                }
+
+            }</script>
+
+
+        @{
+            foreach (ChangTing.Users.Models.UsersInfo item in Model)
+            {
+
+
+                <div class="frm-wrap">
+                    <!--昵称-->
+                    <div class="itm">
+                        <label class="lab">昵称：</label>
+                        <input type="text" class="u-txt txt" maxlength="30" value="@item.NickName">
+                    </div>
+                    <!--简介-->
+                    <div class="jianj">
+                        <label class="lab">简介：</label>
+                        <div class="jianj-a">
+
+                            <textarea id="t1" onkeyup="check();" class="area"> @item.Introduce</textarea>
+                            <!--仅允许用户输入180字-->
+                            <script>
+                                function check() {
+                                    var regC = /[^ -~]+/g;
+                                    var regE = /\D+/g;
+                                    var str = t1.value;
+
+                                    if (regC.test(str)) {
+                                        t1.value = t1.value.substr(0, 180);
+                                    }
+
+                                    if (regE.test(str)) {
+                                        t1.value = t1.value.substr(0, 180);
+                                    }
+                                }
+                            </script>
+                            <span class="zs s-fc2" id="remain">180</span>
+                        </div>
+                    </div>
+                    <!--性别-->
+                    <div class="sex">
+                        <label class="lab">性别：</label>
+                        <div class="sex-xb">
+                            @{
+                                if (item.Gender == 1)
+                                {
+                                    <label class="check"><input type="radio" name="sex" id="" value="" checked="checked" />男</label>
+                                    <label class="check"><input type="radio" name="sex" id="" value="" />女</label>
+                                    <label class="check"><input type="radio" name="sex" id="" value="" />保密</label>
+                                }
+                                else if (item.Gender == 2)
+                                {
+                                    <label class="check"><input type="radio" name="sex" id="" value="" />男</label>
+                                    <label class="check"><input type="radio" name="sex" id="" value="" checked="checked" />女</label>
+                                    <label class="check"><input type="radio" name="sex" id="" value="" />保密</label>
+                                }
+                                else
+                                {
+                                    <label class="check"><input type="radio" name="sex" id="" value="" />男</label>
+                                    <label class="check"><input type="radio" name="sex" id="" value="" />女</label>
+                                    <label class="check"><input type="radio" name="sex" id="" value="" checked="checked" />保密</label>
+                                }
+
+
+
+                            }
+
+                        </div>
+                    </div>
+                    <!--出生日期开始-->
+                    <div class="date-wrap">
+
+                        <label for="meeting">生日：</label><input class="date-input" id="meeting" type="date" value="@item.Birthday.Year-@item.Birthday.Month-@item.Birthday.Day" />
+                    </div>
+                    <!--出生日期结束-->
+                    <!--地区开始-->
+                    @{
+                        string dq = item.Region;
+                        string sheng = dq.Split(',')[0].ToString();
+                        string shi = dq.Split(',')[1].ToString();
+                    }
+
+
+
+
+
+                    <!--地区结束-->
+                    <!--提交开始-->
+                    <div class="sub">
+                        <button type="button" class="btn btn-info"> 保存 </button>
+                    </div>
+
+                    <!--提交结束-->
+
+
+                    <div class="yjfk">
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <!--<h4 class="modal-title" id="exampleModalLabel">意见反馈</h4>-->
+                                        <h4>意见反馈</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="recipient-name" class="control-label">任何产品中的问题，欢迎反馈给我们</label>
+                                                <textarea class="form-control form-tarea" id="message-text" placeholder="请输入反馈内容"></textarea>
+
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message-text" class="control-label"></label>
+
+                                                <label for="recipient-name" class="control-label">请留下联系方式</label>
+                                                <input type="text" class="form-control" id="recipient-name" placeholder="请留下联系方式(电话，qq,邮箱)">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <button id="fk" type="button" class="btn btn-primary">发送反馈</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script type="text/javascript">
+                            var fk = document.getElementById("fk");
+                            var from_fk = document.getElementById("message-text");
+                            var lx = document.getElementById("recipient-name");
+
+                            fk.onclick = function () {
+                                if (from_fk.value == '') {
+                                    alert("请输入反馈内容");
+                                    return;
+                                } else if (lx.value == '') {
+                                    alert("请输入您的联系方式");
+                                    return;
+                                } else {
+                                    alert("发送成功");
+                                }
+
+                            }</script>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+                <div class="avatar f-pr">
+                    <img src="@item.HeadPortrait" id="avatar">
+                    <span class="btm"></span>
+                    <a href="#" class="upload">更换头像</a>
+                </div>
+                        }
+        }
+    </div>
+</div>
+
+
+
+
+<script src="../Content/UI/js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../Content/UI/js/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../Content/UI/js/bootstrap/js/docs.min.js" type="text/javascript" charset="utf-8"></script>
+

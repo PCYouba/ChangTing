@@ -1,0 +1,111 @@
+﻿@model IList<ChangTing.Users.Models.FeedBackInfo>
+@{
+    Layout = "~/Views/Shared/_Backstage.cshtml";
+    ViewBag.Title = "FeedBackList_Admin";
+}
+
+@section SectionCss
+{
+    @* 自己的css样式 *@
+    <link href="~/Content/Users/css/FeedBackList_Admin.css" rel="stylesheet" />
+}
+<div style="margin:0 0 0 46px">
+    <div class="pos-r">
+        <nav class="breadcrumb">
+            <i class="Hui-iconfont">&#xe67f;</i>
+            首页
+            <span class="c-gray en">&gt;</span>
+            用户管理
+            <span class="c-gray en">&gt;</span>
+            用户反馈
+            <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新">
+                <i class="Hui-iconfont">&#xe68f;</i>
+            </a>
+        </nav>
+        <div class="page-container">
+            <div class="cl pd-5 bg-1 bk-gray mt-20 Hui-asidezdy">
+                <span class="l Hui-asidezdyys">
+                    <a href="javascript:;" onclick=datadel() class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+                </span>
+                <span class="r">共有数据：<strong>@Model.Count</strong> 条</span>
+            </div>
+            <div class="mt-20" style="font-size:48px">
+                <table class="table table-border table-bordered table-bg table-hover table-sort">
+                    <thead>
+                        <tr class="text-c">
+                            <th width="30"><input name="" type="checkbox" value=""></th>
+                            <th width="40">反馈Id</th>
+                            <th width="40">用户Id</th>
+                            <th width="60">反馈内容</th>
+                            <th width="50">联系电话</th>
+                            <th width="40">是否解决</th>
+                            <th width="60">创建时间</th>
+                            <th width="60">操作(状态、删除)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            ChangTing.Core.ViewModels.Html_Sting html = new ChangTing.Core.ViewModels.Html_Sting();
+                            foreach (ChangTing.Users.Models.FeedBackInfo item in Model)
+                            {
+                                string introduction = string.Empty;
+                                
+                                introduction = html.toHTMLString(item.S_Content);
+
+                                if (introduction.Length > 20) { introduction = introduction.Substring(0, 20) + "……"; }
+                                <tr class="text-c va-m">
+                                    <td><input name="piliang" type="checkbox" value="@item.FeedBackId "></td>@*选择按钮*@
+                                    <td>@item.FeedBackId</td>@*反馈ID*@
+                                    <td>@item.UserId</td>@*用户ID*@
+                                    <td>@introduction</td>@*反馈内容*@
+                                    <td>@item.Phone</td>@*联系电话*@
+                                    @if (@item.IsSolve == 0)
+                                    {
+                                        <td id="zhuangtai">未解决</td>
+                                    }
+                                    else
+                                    {
+                                        <td id="zhuangtai">已解决</td>
+                                    }@*是否解决*@
+                                    <td>@item.CreateDate</td>@*创建时间*@
+                                    
+                                    <td class="td-manage Hui-asidezdy">
+                                        <span class="Hui-asidezdyys">
+                                            <a style="text-decoration:none" class="ml-5" data-title="反馈回复" _href="../Singer/FeedBackListReply_Admin?feedbackid=@item.FeedBackId" href="javascript:void(0)" title="反馈回复">
+                                                <i class="Hui-iconfont">&#xe6df;</i>@*"_href不能加"*@
+                                            </a>
+                                        </span>
+                                        <span>
+                                            @{if (item.IsSolve == 0)
+                                                {
+                                                    <a style="text-decoration:none;" class="ml-5" href="javascript:void(0)" onclick=feedBack_IsSolveUp(this,@item.UserId) title="标记为已解决">
+                                                        <i class="Hui-iconfont">&#xe6e1;</i>@*"_href不能加"*@
+                                                    </a>
+                                                }
+                                                else
+                                                {
+                                                    <a style="text-decoration:none" class="ml-5" href="javascript:void(0)" onclick=feedBack_IsSolveOut(this,@item.UserId) title="标记为未解决">
+                                                        <i class="Hui-iconfont">&#xe6e0;</i>@*"_href不能加"*@
+                                                    </a>
+                                                }
+                                            }
+                                        </span>
+                                        <a style="text-decoration:none" class="ml-5" onClick="product_del(this, @item.UserId)" href="javascript:;" title="删除">
+                                            <i class="Hui-iconfont">&#xe6e2;</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section SectionJs
+{
+    @* 自己的Js样式 *@
+    <script type="text/javascript" src="~/Content/Users/js/FeedBackList_Admin.js"></script>
+}

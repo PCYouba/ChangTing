@@ -1,0 +1,99 @@
+﻿@model PetaPoco.Page<ChangTing.Singer.Models.AlbumInfo>
+
+@{
+    ViewBag.Title = "SingerIsAlbum";
+}
+
+@section SectionCss
+{
+    <link href="~/Qiantai/Xindieshangjia/css/EnterSinger.css" rel="stylesheet" />
+}
+
+@using (Html.BeginForm("Json", "JsonGet", FormMethod.Post))
+{
+<div class="enter-wrap">
+    <div class="enter-top">
+        <span>新碟上架</span>
+    </div>
+    <div class="enter-contion">
+        @foreach (ChangTing.Singer.Models.AlbumInfo item in (List<ChangTing.Singer.Models.AlbumInfo>)ViewBag.album)
+        { <ul class="contion-wrap">
+            <li class="contion-list">
+                <img src="@item.Image" alt="专辑" title="@item.AlbumId" href="/Index/SingerIsAlbum?AlbumId=@item.AlbumId"/>
+                <p><a href="/Index/SingerIsAlbum?AlbumId=@item.AlbumId">@item.Name</a></p>
+            </li>
+        </ul> }
+       
+
+        
+    </div>
+
+    <div id="content-fenye">
+        <ul>
+            <li id="content-fenye-prev">&lt;@Html.ActionLink("上一页","Xindieshangjia",routeValues:new {page = Model.CurrentPage -1==0?1:Model.CurrentPage-1})  </li>
+            @for (int i = 1; i <= Model.TotalPages; i++)
+                {
+                <li>@i</li>
+            }
+           
+           
+            <li id="content-fenye-next">@Html.ActionLink("下一页", "Xindieshangjia", routeValues: new { page = Model.CurrentPage + 1 >= Model.TotalPages ? Model.TotalPages : Model.CurrentPage + 1 })  &gt;</li>
+        </ul>
+
+        <script type="text/javascript">
+					var contentFenye = document.getElementById('content-fenye');
+					var fenyeLi = contentFenye.getElementsByTagName('li');
+					var num = 1;
+
+					function fnTab() {
+
+						for(var i = 0; i < fenyeLi.length; i++) {
+
+							if(num == 1) {
+								fenyeLi[0].style.disabled = 'disabled';
+								fenyeLi[0].style.color = '#cacaca';
+							} else {
+								fenyeLi[0].style.disabled = '';
+								fenyeLi[0].style.color = '';
+							}
+
+							if(Number(fenyeLi[i].innerHTML)) {
+
+								fenyeLi[i].className = '';
+								fenyeLi[i].index = i;
+
+								fenyeLi[num].className = 'content-fenye-bg';
+
+								fenyeLi[i].onmousemove = function() {
+									this.style.background = 'cornflowerblue';
+									this.style.color = '#fff';
+								}
+
+								fenyeLi[i].onmouseout = function() {
+									this.style.background = '';
+									this.style.color = '';
+								}
+
+							}
+
+						}
+
+					}
+					fnTab();
+					for(var i = 0; i < fenyeLi.length; i++) {
+
+						if(Number(fenyeLi[i].innerHTML)) {
+
+							fenyeLi[i].index = i;
+
+							fenyeLi[i].onclick = function() {
+								num = this.index;
+								fnTab();
+							}
+
+						}
+					}
+        </script>
+    </div>
+</div>
+}

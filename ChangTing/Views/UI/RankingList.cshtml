@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "畅听排行榜";
+}
+@section SectionCss
+{
+    <link rel="stylesheet" type="text/css" href="~/Content/UI/css/home.css" />
+    <link rel="stylesheet" href="~/Content/UI/css/content.css" />
+}
+
+<!--内容开始-->
+<div class="content-left">
+
+    <img src="" alt="广告" />
+</div>
+
+<div class="content-right">
+    <div class="hotsinger">
+        <p>热门歌曲排行榜</p>
+        <ul class="hotsinger-wrap">
+            @{
+                foreach (ChangTing.UI.Viewmodels.UIInfo item in @ViewBag.Recommend)
+                {
+                    <li class="hotsinger-list">
+                        <img src="@item.Image" class="singer-photo" alt="图片" />
+                        <span class="singer-name">@item.Name</span>
+                    </li>
+                }
+
+            }
+        </ul>
+
+
+    </div>
+
+    <div class="ruzhusinger">
+        <div class="ruzhu-wrap">
+            <div class="ruzhu-list">热门歌手</div>
+            <div class="ruzhu-list1"><a href="#">更多>></a></div>
+        </div>
+        <!--<ul class="ruzhu-wrap">
+            <li class="ruzhu-list">入驻歌手</li>
+            <li class="ruzhu-list1"><a href="#">更多>></a></li>
+        </ul>-->
+
+        <ul class="hotsinger-wrap">
+
+            @{
+                foreach (ChangTing.Singer.Models.SingerInfo item in @ViewBag.NewestSinger)
+                {
+                    <li class="hotsinger-list">
+                        <img src="@item.HeadPortrait" class="singer-photo" alt="图片" />
+                        <span class="singer-name"> @item.Name</span>
+                    </li>
+                }
+
+            }
+
+
+        </ul>
+    </div>
+
+</div>
+<!--内容结束-->

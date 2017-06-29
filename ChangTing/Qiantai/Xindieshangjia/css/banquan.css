@@ -1,0 +1,15 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.banquan{
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+}
+.fenge{
+	display: block;
+	width: 800px;
+	height: 1px;
+	background-color: #b6b4b4;
+}

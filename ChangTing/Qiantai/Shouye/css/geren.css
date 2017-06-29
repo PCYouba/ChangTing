@@ -1,0 +1,38 @@
+body {
+	background: #f0f0f0;
+}
+
+.foot {
+	width: 70%;
+	height: 500px;
+	background: #FFFFFF;
+	margin: 0 auto;
+	position: relative;
+}
+
+.touxiang {
+	position: absolute;
+	
+	left: 50px;
+	top: 50px;
+}
+
+.genghua {
+	position: absolute;
+	width: 190px;
+	height: 25px;
+	display: inline-block;
+	/*border: 1px solid #000000;*/
+	left: 55px;
+	top: 220px;
+	background: #cecccc;
+	text-align: center;
+	color: #FFFFFF;
+	line-height: 25px;
+	opacity: 0;
+}
+
+.genghua:hover {
+	opacity: 1;
+	cursor: pointer;
+}

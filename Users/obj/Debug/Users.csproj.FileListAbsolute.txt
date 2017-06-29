@@ -1,0 +1,81 @@
+C:\Users\luvian\Desktop\ChangTing\Users\obj\Debug\Users.csprojResolveAssemblyReference.cache
+C:\Users\luvian\Desktop\ChangTing\Users\bin\Debug\ChangTing.Users.dll
+C:\Users\luvian\Desktop\ChangTing\Users\bin\Debug\ChangTing.Users.pdb
+C:\Users\luvian\Desktop\ChangTing\Users\bin\Debug\ChangTing.Admin.dll
+C:\Users\luvian\Desktop\ChangTing\Users\bin\Debug\ChangTing.Core.dll
+C:\Users\luvian\Desktop\ChangTing\Users\bin\Debug\System.Web.Mvc.dll
+C:\Users\luvian\Desktop\ChangTing\Users\bin\Debug\System.Web.Optimization.dll
+C:\Users\luvian\Desktop\ChangTing\Users\bin\Debug\ChangTing.Admin.pdb
+C:\Users\luvian\Desktop\ChangTing\Users\bin\Debug\ChangTing.Core.pdb
+C:\Users\luvian\Desktop\ChangTing\Users\bin\Debug\System.Web.Mvc.xml
+C:\Users\luvian\Desktop\ChangTing\Users\bin\Debug\System.Web.Optimization.xml
+C:\Users\luvian\Desktop\ChangTing\Users\obj\Debug\ChangTing.Users.dll
+C:\Users\luvian\Desktop\ChangTing\Users\obj\Debug\ChangTing.Users.pdb
+D:\@.@\music\trunk\ChangTing\Users\obj\Debug\Users.csprojResolveAssemblyReference.cache
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\ChangTing.Users.dll
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\ChangTing.Users.pdb
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\ChangTing.Admin.dll
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\ChangTing.Core.dll
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\ChangTing.Music.dll
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\ChangTing.Singer.dll
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\System.Web.Mvc.dll
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\System.Web.Optimization.dll
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\ChangTing.Admin.pdb
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\ChangTing.Core.pdb
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\ChangTing.Music.pdb
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\ChangTing.Singer.pdb
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\System.Web.Mvc.xml
+D:\@.@\music\trunk\ChangTing\Users\bin\Debug\System.Web.Optimization.xml
+D:\@.@\music\trunk\ChangTing\Users\obj\Debug\ChangTing.Users.dll
+D:\@.@\music\trunk\ChangTing\Users\obj\Debug\ChangTing.Users.pdb
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\ChangTing.Users.dll
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\ChangTing.Users.pdb
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\ChangTing.Admin.dll
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\ChangTing.Core.dll
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\ChangTing.Music.dll
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\ChangTing.Singer.dll
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\System.Web.Mvc.dll
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\System.Web.Optimization.dll
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\ChangTing.Admin.pdb
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\ChangTing.Core.pdb
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\ChangTing.Music.pdb
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\ChangTing.Singer.pdb
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\System.Web.Mvc.xml
+G:\AAAAA\trunk\ChangTing\Users\bin\Debug\System.Web.Optimization.xml
+G:\AAAAA\trunk\ChangTing\Users\obj\Debug\Users.csprojResolveAssemblyReference.cache
+G:\AAAAA\trunk\ChangTing\Users\obj\Debug\ChangTing.Users.dll
+G:\AAAAA\trunk\ChangTing\Users\obj\Debug\ChangTing.Users.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\ChangTing.Users.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\ChangTing.Users.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\ChangTing.Admin.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\ChangTing.Core.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\ChangTing.Music.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\ChangTing.Singer.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\System.Web.Mvc.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\System.Web.Optimization.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\ChangTing.Admin.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\ChangTing.Core.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\ChangTing.Music.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\ChangTing.Singer.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\System.Web.Mvc.xml
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\bin\Debug\System.Web.Optimization.xml
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\obj\Debug\Users.csprojResolveAssemblyReference.cache
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\obj\Debug\ChangTing.Users.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\Users\obj\Debug\ChangTing.Users.pdb
+F:\小组\trunk\ChangTing\Users\bin\Debug\ChangTing.Users.dll
+F:\小组\trunk\ChangTing\Users\bin\Debug\ChangTing.Users.pdb
+F:\小组\trunk\ChangTing\Users\bin\Debug\ChangTing.Admin.dll
+F:\小组\trunk\ChangTing\Users\bin\Debug\ChangTing.Core.dll
+F:\小组\trunk\ChangTing\Users\bin\Debug\ChangTing.Music.dll
+F:\小组\trunk\ChangTing\Users\bin\Debug\ChangTing.Singer.dll
+F:\小组\trunk\ChangTing\Users\bin\Debug\System.Web.Mvc.dll
+F:\小组\trunk\ChangTing\Users\bin\Debug\System.Web.Optimization.dll
+F:\小组\trunk\ChangTing\Users\bin\Debug\ChangTing.Admin.pdb
+F:\小组\trunk\ChangTing\Users\bin\Debug\ChangTing.Core.pdb
+F:\小组\trunk\ChangTing\Users\bin\Debug\ChangTing.Music.pdb
+F:\小组\trunk\ChangTing\Users\bin\Debug\ChangTing.Singer.pdb
+F:\小组\trunk\ChangTing\Users\bin\Debug\System.Web.Mvc.xml
+F:\小组\trunk\ChangTing\Users\bin\Debug\System.Web.Optimization.xml
+F:\小组\trunk\ChangTing\Users\obj\Debug\Users.csprojResolveAssemblyReference.cache
+F:\小组\trunk\ChangTing\Users\obj\Debug\ChangTing.Users.dll
+F:\小组\trunk\ChangTing\Users\obj\Debug\ChangTing.Users.pdb

@@ -1,0 +1,99 @@
+﻿@model IList<ChangTing.Users.Models.CommentInfo>
+@{
+    Layout = "~/Views/Shared/_Backstage.cshtml";
+    ViewBag.Title = "CommentList_Admin";//评论
+}
+
+@section SectionCss
+{
+    @* 自己的css样式 *@
+    <link href="~/Content/Users/css/CommentList_Admin.css" rel="stylesheet" />
+}
+<div style="margin:0 0 0 46px">
+    <div class="pos-r">
+        <nav class="breadcrumb">
+            <i class="Hui-iconfont">&#xe67f;</i>
+            首页
+            <span class="c-gray en">&gt;</span>
+            用户管理
+            <span class="c-gray en">&gt;</span>
+            评论管理
+            <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新">
+                <i class="Hui-iconfont">&#xe68f;</i>
+            </a>
+        </nav>
+        <div class="page-container">
+            <div class="cl pd-5 bg-1 bk-gray mt-20 Hui-asidezdy">
+                <span class="l Hui-asidezdyys">
+                    <a href="javascript:;" onclick=datadel() class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+                </span>
+                <span class="r">共有数据：<strong>@Model.Count</strong> 条</span>
+            </div>
+            <div class="mt-20" style="font-size:48px">
+                <table class="table table-border table-bordered table-bg table-hover table-sort">
+                    <thead>
+                        <tr class="text-c">
+                            <th width="30"><input name="" type="checkbox" value=""></th>
+                            <th width="40">用户评论ID</th>
+                            <th width="50">用户ID</th>
+                            <th width="50">音乐ID</th>
+                            <th width="100">评论内容</th>
+                            <th width="40">点赞个数</th>
+                            <th width="40">点踩个数</th>
+                            <th width="40">显示状态</th>
+                            <th width="40">回复ID</th>
+                            <th width="40">创建时间</th>
+                            <th width="60">操作(状态,删除)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            ChangTing.Core.ViewModels.Html_Sting html = new ChangTing.Core.ViewModels.Html_Sting();
+                            foreach (ChangTing.Users.Models.CommentInfo item in Model)
+                            {
+                                <tr class="text-c va-m">
+                                    <td><input name="piliang" type="checkbox" value="@item.UserId "></td>@*选择按钮*@
+                                    <td>@item.CommentId</td>@*用户评论ID*@
+                                    <td>@item.UserId</td>@*用户ID*@
+                                    <td>@item.StorageId</td>@*音乐ID*@
+                                    <td>@item.C_Content</td>@*评论内容*@
+                                    <td>@item.Praise</td>@*点赞个数*@
+                                    <td>@item.Tread</td>@*点踩个数*@
+                                    <td>@item.Display</td>@*显示状态*@
+                                    <td>@item.Reply</td>@*回复ID*@
+                                    <td>@item.CreateDate</td>@*创建时间*@
+                                    <td class="td-manage">
+                                        <span>
+                                            @{if (item.Display == 0)
+                                                {
+                                                    <a style="text-decoration:none;" class="ml-5" href="javascript:void(0)" onclick=comment_DisplayOut(this,@item.UserId) title="停用">
+                                                        <i class="Hui-iconfont">&#xe6e1;</i>
+                                                    </a>
+                                                }
+                                                else
+                                                {
+                                                    <a style="text-decoration:none" class="ml-5" href="javascript:void(0)" onclick=comment_DisplayUp(this,@item.UserId) title="启用">
+                                                        <i class="Hui-iconfont">&#xe6e0;</i>
+                                                    </a>
+                                                }
+                                            }
+                                        </span>
+                                        <a style="text-decoration:none" class="ml-5" onClick="product_del(this, @item.UserId)" href="javascript:;" title="删除">
+                                            <i class="Hui-iconfont">&#xe6e2;</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section SectionJs
+{
+    @* 自己的Js样式 *@
+    <script type="text/javascript" src="~/Content/Users/js/CommentList_Admin.js"></script>
+}

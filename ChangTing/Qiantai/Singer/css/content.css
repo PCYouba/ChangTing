@@ -1,0 +1,93 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul li {
+	list-style: none;
+}
+.content{
+	width: 800px;
+	height: 1000px;
+	background-color: #e0dfdf;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.content-left{
+	width: 200px;
+	height: 800px;
+	border-right: 1px solid #c4c3c3;
+	float: left; 
+}
+.content-left img{
+	width: 150px;
+	height: 300px;
+	position: absolute;
+	left: 25px;
+	top: 70px;
+	
+}
+.hotsinger{
+	width: 600px;
+	height: 350px;
+/*	border: 1px solid red;*/
+	margin-left: 200px;
+}
+.hotsinger p{
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 2px solid #3767a9;
+	width: 500px;
+	height: 50px;
+	line-height: 50px;
+	
+	margin-left: 20px;
+	
+}
+.hotsinger-tupian{
+	width: 500px;
+	height: 260px;
+	
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.singer-photo{
+	width: 120px;
+	height: 120px;
+	
+}
+.hotsinger-list{
+	width: 120px;
+	height: 160px;
+	/*border: 1px solid red;*/
+	float: left;
+	margin: 20px;
+}
+.singer-name{
+
+	font-size: 16px;
+	
+	margin-left: 25px;
+	margin-top: 10px;
+	display: block;
+	
+}
+.ruzhu-wrap{
+	width: 500px;
+	height: 50px;
+	border-bottom: 2px solid #006699;
+	float: left;
+	display: block;
+	margin-left: 20px;
+}
+
+.ruzhu-wrap div{
+	font-size: 16px;
+	font-weight: bold;
+	
+	float: left;
+}
+.ruzhu-wrap div:last-child {
+	position: absolute;
+	right: 100px;
+}

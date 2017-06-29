@@ -1,0 +1,53 @@
+body{
+	background-color: #F0F0F0;
+	font-size: 20px;
+}
+h1{
+	
+	margin-left: 40%;
+}
+.neibu {
+        position: relative;
+       
+        margin-top: 10px;
+        /*opacity:0.5;*/ /*设置透明度*/
+        background-size: 100%;
+        width: 700px;
+        height: 600px;
+        margin: 30px auto 0 auto;
+        background-image: url(../img/q1.jpg);
+        border-radius: 20px;
+    }
+.xinxi{
+    margin-left: 20%;
+    padding-top: 100px;
+}
+.input{
+	height: 20px;
+	width: 50%;
+	margin-top:10px ;
+}
+.tj-btn{
+	margin-top: 20px;
+	margin-left: 45%;
+}
+.xinxi-btn{
+	height: 30px;
+	width: 25%;
+	border-style: none;
+	background-color:#FFFFFF ;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+.kuang{
+    height:100px;
+    width: 50%;
+    margin-left:110px;
+}
+
+.red{
+    color:red;
+}
+/*glub 
+webjalk
+Node.js*/

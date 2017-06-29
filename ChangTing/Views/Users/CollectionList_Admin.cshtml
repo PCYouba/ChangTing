@@ -1,0 +1,91 @@
+﻿@model IList<ChangTing.Users.ViewModels.CollectionViewInfo>
+@{
+    Layout = "~/Views/Shared/_Backstage.cshtml";
+    ViewBag.Title = "CollectionList_Admin";
+}
+
+@section SectionCss
+{
+    @* 自己的css样式 *@
+    <link href="~/Content/Users/css/CollectionList_Admin.css" rel="stylesheet" />
+}
+<div style="margin:0 0 0 46px">
+    <div class="pos-r">
+        <nav class="breadcrumb">
+            <i class="Hui-iconfont">&#xe67f;</i>
+            首页
+            <span class="c-gray en">&gt;</span>
+            用户管理
+            <span class="c-gray en">&gt;</span>
+            收藏列表
+            <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新">
+                <i class="Hui-iconfont">&#xe68f;</i>
+            </a>
+        </nav>
+        <div class="page-container">
+            <div class="cl pd-5 bg-1 bk-gray mt-20 Hui-asidezdy">
+                <span class="l Hui-asidezdyys">
+                    <a href="javascript:;" onclick=datadel() class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+                </span>
+                <span class="r">共有数据：<strong>@Model.Count</strong> 条</span>
+            </div>
+            <div class="mt-20" style="font-size:48px">
+                <table class="table table-border table-bordered table-bg table-hover table-sort">
+                    <thead>
+                        <tr class="text-c">
+                            <th width="30"><input name="" type="checkbox" value=""></th>
+                            <th width="50">音乐收藏ID</th>
+                            <th width="50">用户ID</th>
+                            <th width="60">用户登陆名</th>
+                            <th width="50">音乐(专辑)ID</th>
+                            <th width="70">音乐(专辑)名</th>
+                            <th width="60">创建时间</th>
+                            <th width="60">操作(删除)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            ChangTing.Core.ViewModels.Html_Sting html = new ChangTing.Core.ViewModels.Html_Sting();
+                            foreach (ChangTing.Users.ViewModels.CollectionViewInfo item in Model)
+                            {
+                                <tr class="text-c va-m">
+                                    <td><input name="piliang" type="checkbox" value="@item.CollectionId "></td>@*选择按钮*@
+                                    <td>@item.CollectionId</td>@*收藏ID*@
+                                    <td>@item.UserId</td>@*用户ID*@
+                                    <td>@item.LoginName</td>@*用户登陆名*@
+                                    @if (@item.StorageId!=0)
+                                    {
+                                        <td>@item.StorageId</td>@*音乐ID*@
+                                        <td>@item.StorageName</td>@*音乐名*@
+                                    }
+                                    else if(@item.AlbumId != 0)
+                                    {
+                                        <td>@item.AlbumId</td>@*专辑ID*@
+                                        <td>@item.AlbumName</td>@*专辑名*@
+                                    }
+                                    else
+                                    {
+                                        <td>该音乐(专辑)已被删除</td>
+                                        <td>该音乐(专辑)已被删除</td>
+                                    }
+                                    <td>@item.CreateDate</td>@*创建时间*@
+                                    <td class="td-manage">
+                                        <a style="text-decoration:none" class="ml-5" onClick="product_del(this, @item.CollectionId)" href="javascript:;" title="删除">
+                                            <i class="Hui-iconfont">&#xe6e2;</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section SectionJs
+{
+    @* 自己的Js样式 *@
+    <script type="text/javascript" src="~/Content/Users/js/CollectionList_Admin.js"></script>
+}

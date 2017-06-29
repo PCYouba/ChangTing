@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    
+    <link rel="stylesheet" type="text/css" href="~/js/bootstrap/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/js/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/js/bootstrap/css/docs.min.css" />
+
+    <link rel="stylesheet" type="text/css"href="~/css/home.css" />
+    <link rel="stylesheet" href="~/css/content.css" />
+    <link rel="stylesheet" href="~/css/banquan.css" />
+
+    @RenderSection("SectionCss", required: false)
+    
+</head>
+<body>
+    <div id="top-main">
+        <div id="top">
+            <div id="biejin1"></div>
+            <div id="biejin2"></div>
+            <div id="biejin3"></div>
+            <div id="biejin4">畅听</div>
+            <div id="guanyu">
+                <ul>
+                    <li>
+                        <a href="#">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="#">合作咨询</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="serch">
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+                    <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status">
+                </div>
+            </div>
+            <div id="touxiang">
+                @{
+                    if (ViewBag.User == null)
+                    {
+                        <img class="img-rounded" alt="用户头像" style="width: 35px; height: 40px;" src="" data-holder-rendered="true">                        
+                    }
+                    else
+                    {
+                        <img class="img-rounded" alt="用户头像" style="width: 35px; height: 40px;" src="@ViewBag.User.HeadPortrait"  onclick='window.open("PersonalSetting")' data-holder-rendered="true">
+                    }
+                }
+            </div>
+
+        </div>
+    </div>
+    <!--导航-->
+    <div id="nav">
+        <ul>
+            <li>
+                <a href="index">首页</a>
+            </li>
+            <li>
+                <a href="/ui/RankingList">排行榜</a>
+            </li>
+            <li>
+                <a href="/Index/Xindieshangjia">新碟上架</a>
+            </li>
+            <li>
+                <a href="/Index/Singers">歌手</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!--内容-->
+    <div class="content">
+        @RenderBody()
+
+        <!--版权-->
+        <div class="banquan">
+            <span class="fenge"></span>
+            版权所有©2017 青岛港湾职业技术有限公司京ICP备17069421号
+        </div>
+    </div>
+
+
+    <script src="~/js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/js/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/js/bootstrap/js/docs.min.js" type="text/javascript" charset="utf-8"></script>
+
+    @RenderSection("SectionJs", required: false)
+</body>
+</html>

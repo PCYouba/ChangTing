@@ -1,0 +1,241 @@
+body {
+	background: #f0f0f0;
+}
+
+.foot {
+	width: 70%;
+	height: 800px;
+	background: #FFFFFF;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.touxiang {
+	position: absolute;	
+	cursor: pointer;
+	left: 50px;
+	top: 50px;
+}
+
+.genghua {
+	position: absolute;
+	width: 190px;
+	height: 25px;
+	display: inline-block;
+	/*border: 1px solid #000000;*/
+	left: 55px;
+	top: 220px;
+	background: #cecccc;
+	text-align: center;
+	color: #FFFFFF;
+	line-height: 25px;
+	opacity: 0;
+}
+
+.genghua:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.user {
+	position: absolute;
+	display: block;
+	/*border: 1px solid #000000;*/
+	left: 290px;
+	top: 63px;
+	text-align: center;
+	font-size: 23px;	
+	
+}
+
+
+.xian {
+	position: absolute;
+	height: 1px;
+	font-size: 0;
+	line-height: 1px;
+	overflow: hidden;
+	background: #c4c3c3;
+	width: 65%;
+	left: 290px;
+	top: 110px;
+}
+
+.anniu {
+	position: absolute;
+	right: 40px;
+	top: 65px;
+	width: 110px;
+	height: 30px;
+	border: 1px solid #c4c4c4;
+	background: #FFFFFF;
+	border-radius: 5px;
+	font-size: 13px;
+	text-align: center;
+	line-height: 30px;
+	
+}
+
+.foot-list {
+	position: absolute;
+	width: 222px;
+	height: 40px;
+	/*border: 1px solid #000000;*/
+	left: 290px;
+	top: 130px;
+}
+
+.foot-list li {
+	position: relative;	
+	float: left;
+	width: 74px;
+	height: 100%;
+	/*background: #00CC00;*/
+	border-right: 1px solid #C4C3C3;
+	
+}
+
+.foot-list li:hover {
+	cursor: pointer;
+	color: #007788;
+}
+
+.foot-list li:hover a{
+	color: #007788;
+}
+
+.foot-list li:last-child {
+	border-right: none;
+}
+
+.foot-list li a {
+	position: absolute;
+	top: -5px;
+	color: #000000;
+	font-size: 20px;
+	
+}
+
+.foot-list li a:hover {
+	text-decoration: none;
+}
+
+.foot-list li span {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	font-size: 14px;
+}
+
+.adress {
+	position: absolute;
+	height: 20px;
+	/*border: 1px solid #000000;*/
+	left: 290px;
+	top: 180px;
+}
+
+.shejiao {
+	position: absolute;
+	height: 20px;
+	/*border: 1px solid #000000;*/
+	left: 290px;
+	top: 205px;
+}
+
+.weibo,.qq {	
+	width: 20px;
+	height: 20px;
+}
+
+
+.gedan {
+	position: absolute;
+	width: 100%;
+	/*height: 40px;*/
+	/*border: 1px solid #000000;*/
+	left: 50px;	
+	top: 310px;
+	font-size: 22px;
+	font-weight: 350;
+}
+
+.gedan-xian {
+	position: absolute;
+	border: 1.5px solid #B92C28;	
+	width: 90%;
+	left: 50px;
+	top: 325px;
+}
+
+.gedan-music {
+	position: relative;
+	width: 150px;
+	height: 180px;
+	/*border: 1px solid #000000;*/
+	left: 50px;
+	top: 370px;
+}
+
+.xin {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 120px;
+	background: #898989;
+	font-size: 90px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 170px;
+}
+
+.xin:hover {
+	color: #FFFFFF;
+}
+
+.bofang {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	background: #434242;
+	top: 118px;
+	border-top: 2px solid #333232;
+	color: #d3d1d1;	
+	font-size: 13px;
+}
+
+.erji {
+	position: absolute;
+	left: 10px;
+	top: 6px;
+}
+.ling {
+	position: absolute;
+	left: 18px;
+}
+
+.bofang-icon {
+	position: absolute;
+	display: block;
+	right: 10px;	
+}
+
+.bofang-icon span {
+	font-size: 16px;
+	color: #d3d1d1;
+	top: 6px;
+}
+
+.bofang-icon:hover span {
+	color: #FFFFFF;
+}
+
+.bofang-wenzi {
+	position: absolute;
+	display: block;
+	width: 100%;
+	top: 153px;
+	font-weight: 500;
+	font-size: 14px;
+}

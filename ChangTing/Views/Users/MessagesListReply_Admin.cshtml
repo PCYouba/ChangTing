@@ -1,0 +1,152 @@
+﻿@model ChangTing.Users.Models.MessagesInfo
+@{
+    Layout = "~/Views/Shared/_Backstage.cshtml";
+    ViewBag.Title = "MessagesListReply_Admin";
+}
+
+@section SectionCss
+{
+    <link rel="stylesheet" href="~/Content/Messages/css/MessagesListReply_Admin.css" />
+}
+
+<article class="page-container" style="overflow:hidden">
+    @using (Html.BeginForm("FeedBackListReply_Admin", "Users", FormMethod.Post, htmlAttributes: new
+    {@*target = "_blank",*@ enctype = "multipart/form-data",
+        @id = "form-article-add",
+        @class = "form form-horizontal"
+    }))
+    {
+        <input type="hidden" value="@ViewBag.cg" id="myHiddenVar" />//操作结果存储
+        <input type="hidden" value="@ViewBag.cg" id="userId" />//操作结果存储
+
+        if (ViewBag.cg != null)
+        {
+            <script type="text/javascript">
+                alert($('#myHiddenVar').val());
+            </script>
+        };
+        if (Model.MessageId != 0)//回信
+        {
+            <div class="row cl">
+                <div class="col-xs-6 col-sm-5">
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-5">标题：</label>
+                        <div class="formControls col-xs-8 col-sm-7 mb-15">
+                            @Html.LabelFor(Model => Model.Title, htmlAttributes: new
+                       {
+                           @class = "form-label",
+                           id = "Title",
+                           name = "Title"
+                       })
+                        </div>
+                    </div>
+
+
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-5">发件人：</label>
+
+                        <label class="col-xs-4 col-sm-5">@ViewBag.Found[1]</label>
+                        <input type="hidden" value="@ViewBag.Found[0]" id="myHiddenFoundId" />@*收件人ID*@
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-xs-4 col-sm-5">收件人：</label>
+                        <div class="formControls col-xs-7 col-sm-7 mb-15">
+                            @{
+                                ChangTing.Users.Models.UsersInfo usersinfo = (ChangTing.Users.Models.UsersInfo)ViewBag.User;
+                                <label class="form-label" id="usersname" name="usersname" value="@usersinfo.NickName" />
+                                @Html.HiddenFor(Model => Model.UserId)
+                            }
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <br />
+
+            <label class="form-label col-xs-4 col-sm-2">歌手自我介绍：</label>
+                <div class="form-label col-xs-8 col-sm-8">
+                    <span class="c-red">@Html.ValidationMessageFor(Model => Model.M_Content)</span>
+                </div>
+
+                                }
+                                else//管理员发信
+                                {
+                                    <div class="row cl">
+
+                                        <div class="col-xs-6 col-sm-5">
+                                            <div class="row cl">
+                                                <label class="form-label col-xs-4 col-sm-5">标题：</label>
+                                                <div class="formControls col-xs-8 col-sm-7 mb-15">
+                                                    @Html.TextBoxFor(Model => Model.Title, htmlAttributes: new
+                                               {
+                                                   @class = "input-text",
+                                                   id = "FeedBackId",
+                                                   name = "FeedBackId"
+                                               })
+                                                </div>
+                                            </div>
+                                            <div class="row cl">
+                                                <label class="form-label col-xs-4 col-sm-5">发件人：</label>
+
+                                                <label class="col-xs-4 col-sm-5">@ViewBag.Found[1]</label>
+                                                <input type="hidden" value="@ViewBag.Found[0]" id="myHiddenFoundId" />@*收件人ID*@
+                                            </div>
+                                            <div class="row cl">
+                                                <label class="form-label col-xs-4 col-sm-5">收件人：</label>
+                                                <div class="formControls col-xs-7 col-sm-7 mb-15">
+                                                    @if (ViewBag.category != null)
+                                                    {
+                                                        ChangTing.Users.Models.UsersInfo categoryinfo = (ChangTing.Users.Models.UsersInfo)ViewBag.User;
+                                                        <input class="input-text lest-text" id="categoryname" name="categoryname" value="@categoryinfo.NickName" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input class="input-text lest-text" id="categoryname" name="categoryname" />
+                                                    }
+                                                    <div class="list-text-button">
+                                                        <div class="list-text-button-sanjiao"></div>
+                                                    </div>
+
+                                                    <div class="list-textlist">
+                                                        <div _val="category">
+                                                            @if (ViewBag.UserName != null)
+                                                            {
+                                                                foreach (ChangTing.Users.Models.UsersInfo item in ViewBag.UserName)
+                                                                {
+                                                                    <a value="@item.UserId">@item.NickName</a>
+                                                                }
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <label class="form-label col-xs-4 col-sm-2">公告内容：</label>
+                                    <div class="form-label col-xs-8 col-sm-8">
+                                        <span class="c-red">@Html.ValidationMessageFor(Model => Model.M_Content)</span>
+                                    </div>
+
+                                }
+                                <div class="row cl">
+                                    <div class="formControls col-xs-8 col-sm-9">
+                                        <script id="editor" name="editor" type="text/plain" style="height:400px;width:100%">
+                                            @Html.Raw(ViewBag.editortext)
+                                        </script>
+                                    </div>
+                                </div>
+                                <div class="row cl">
+                                    <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                                        <button class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 提交</button>
+                                        <button onClick="removeIframe();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                                    </div>
+                                </div>
+                                @*@Html.HiddenFor(Model => Model.IsSolve)//存存是否解决*@
+                                }
+</article>
+@section SectionJs
+{
+    <script type="text/javascript" src="~/Content/Messages/js/MessagesListReply_Admin.js"></script>
+}

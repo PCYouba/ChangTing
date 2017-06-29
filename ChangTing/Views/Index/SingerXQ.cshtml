@@ -1,0 +1,110 @@
+﻿@model ChangTing.Singer.Models.SingerInfo
+
+@{
+    Layout = "~/Views/Shared/_moban.cshtml";
+}
+@section SectionCss
+{
+    @* 自己的css样式 *@
+<link href="~/Qiantai/SingerXQ/css/geshouXQ.css" rel="stylesheet" />
+<link href="~/Qiantai/SingerXQ/css/public.css" rel="stylesheet" />
+}
+
+@{ 
+    
+<div class="content-header">
+    <h2>歌手信息</h2>
+    <div class="content-header-left">
+        <img src="@Model.HeadPortrait" />
+    </div>
+     
+
+    <div class="content-header-right">
+        <ul>
+            <li><h3>@Model.Name</h3></li>
+            <li><h4>职业：</h4><span>歌手</span></li>
+            <li><h4>年龄：</h4><span>@Model.Age</span></li>
+            <li><h4>入驻日期：</h4><span>@Model.CreateDate.Year/@Model.CreateDate.Month</span></li>
+            
+        </ul>
+    </div>
+    
+</div>
+
+<div class="clear"></div>
+<div class="content-middle">
+    <div class="content-middle-jiesao">
+        <h3>个人介绍：</h3>
+        <span>@Html.Raw(@Model.Introduce) </span>
+    </div>
+    
+  
+    <div class="clear"></div>
+    <div class="content-middle-music">
+        <h3>歌手单曲 | 歌手专辑</h3>
+        <ul class="content-middle-music-lis">
+@{
+            int i = 0;
+            foreach(ChangTing.Music.Models.StorageInfo item in (List<ChangTing.Music.Models.StorageInfo>)ViewBag.mus)
+            {
+        i++;
+            <li>
+                <ul class="content-middle-music-list">
+                   
+                    <li class="list-num">@i</li>
+                    
+                   
+                    <li><span class="list-play"></span></li>
+                    <li class="list-middle"><a href="javascript:;">@item.RealName</a></li>
+                    <li class="list-on">
+                        <span class="list-on-date">@item.Time 次</span>
+                        <ul class="list-on-lis">
+                            
+                            <li id="list-on-lis-keep"></li>
+                            <li id="list-on-lis-download"></li>
+                        </ul>
+                    </li>
+                   
+                        <li class="list-foot"><a href="javascript:;">所属专辑：@item.Name</a></li>
+                   
+                   
+                    
+                </ul>
+            </li>
+    }
+            }
+           
+           
+        </ul>
+    </div>
+</div>
+}
+<div class="clear"></div>
+@*<div id="content-fenye">
+    <ul>
+        <li id="content-fenye-prev">&lt; 上一页</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>···</li>
+        <li>32</li>
+        <li id="content-fenye-next">下一页 &gt;</li>
+    </ul>
+</div>*@
+        
+    
+@section SectionJs
+{
+    @* 自己的js样式 *@
+    
+<script src="~/Qiantai/SingerXQ/js/geShouXQ.js"></script>
+}
+
+
+
+

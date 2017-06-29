@@ -1,0 +1,100 @@
+G:\AAAAA\trunk\ChangTing\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.UI.dll
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.UI.pdb
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.Admin.dll
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.Core.dll
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.Index.dll
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.Music.dll
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.Singer.dll
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.Users.dll
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\System.Web.Mvc.dll
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\System.Web.Optimization.dll
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.Admin.pdb
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.Core.pdb
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.Index.pdb
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.Music.pdb
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.Singer.pdb
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\ChangTing.Users.pdb
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\System.Web.Mvc.xml
+G:\AAAAA\trunk\ChangTing\UI\bin\Debug\System.Web.Optimization.xml
+G:\AAAAA\trunk\ChangTing\UI\obj\Debug\ChangTing.UI.dll
+G:\AAAAA\trunk\ChangTing\UI\obj\Debug\ChangTing.UI.pdb
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.UI.dll
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.UI.pdb
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.Admin.dll
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.Core.dll
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.Index.dll
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.Music.dll
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.Singer.dll
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.Users.dll
+G:\ChangTing\ChangTing\UI\bin\Debug\System.Web.Mvc.dll
+G:\ChangTing\ChangTing\UI\bin\Debug\System.Web.Optimization.dll
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.Admin.pdb
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.Core.pdb
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.Index.pdb
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.Music.pdb
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.Singer.pdb
+G:\ChangTing\ChangTing\UI\bin\Debug\ChangTing.Users.pdb
+G:\ChangTing\ChangTing\UI\bin\Debug\System.Web.Mvc.xml
+G:\ChangTing\ChangTing\UI\bin\Debug\System.Web.Optimization.xml
+G:\ChangTing\ChangTing\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+G:\ChangTing\ChangTing\UI\obj\Debug\ChangTing.UI.dll
+G:\ChangTing\ChangTing\UI\obj\Debug\ChangTing.UI.pdb
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.UI.dll
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.UI.pdb
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.Admin.dll
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.Core.dll
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.Index.dll
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.Music.dll
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.Singer.dll
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.Users.dll
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\System.Web.Optimization.dll
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.Admin.pdb
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.Core.pdb
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.Index.pdb
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.Music.pdb
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.Singer.pdb
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\ChangTing.Users.pdb
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\System.Web.Mvc.xml
+D:\@.@\music\trunk\ChangTing\UI\bin\Debug\System.Web.Optimization.xml
+D:\@.@\music\trunk\ChangTing\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+D:\@.@\music\trunk\ChangTing\UI\obj\Debug\ChangTing.UI.dll
+D:\@.@\music\trunk\ChangTing\UI\obj\Debug\ChangTing.UI.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.UI.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.UI.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.Admin.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.Core.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.Index.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.Music.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.Singer.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.Users.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\System.Web.Optimization.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.Admin.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.Core.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.Index.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.Music.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.Singer.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\ChangTing.Users.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\System.Web.Optimization.xml
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\obj\Debug\ChangTing.UI.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\obj\Debug\ChangTing.UI.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\UI\bin\Debug\System.Web.Mvc.xml
+F:\小组\trunk\ChangTing\UI\bin\Debug\ChangTing.UI.dll
+F:\小组\trunk\ChangTing\UI\bin\Debug\ChangTing.UI.pdb
+F:\小组\trunk\ChangTing\UI\bin\Debug\ChangTing.Admin.dll
+F:\小组\trunk\ChangTing\UI\bin\Debug\ChangTing.Core.dll
+F:\小组\trunk\ChangTing\UI\bin\Debug\ChangTing.Music.dll
+F:\小组\trunk\ChangTing\UI\bin\Debug\ChangTing.Singer.dll
+F:\小组\trunk\ChangTing\UI\bin\Debug\ChangTing.Users.dll
+F:\小组\trunk\ChangTing\UI\bin\Debug\System.Web.Optimization.dll
+F:\小组\trunk\ChangTing\UI\bin\Debug\ChangTing.Admin.pdb
+F:\小组\trunk\ChangTing\UI\bin\Debug\ChangTing.Core.pdb
+F:\小组\trunk\ChangTing\UI\bin\Debug\ChangTing.Music.pdb
+F:\小组\trunk\ChangTing\UI\bin\Debug\ChangTing.Singer.pdb
+F:\小组\trunk\ChangTing\UI\bin\Debug\ChangTing.Users.pdb
+F:\小组\trunk\ChangTing\UI\bin\Debug\System.Web.Mvc.xml
+F:\小组\trunk\ChangTing\UI\bin\Debug\System.Web.Optimization.xml
+F:\小组\trunk\ChangTing\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+F:\小组\trunk\ChangTing\UI\obj\Debug\ChangTing.UI.dll
+F:\小组\trunk\ChangTing\UI\obj\Debug\ChangTing.UI.pdb

@@ -1,0 +1,273 @@
+C:\Users\luvian\Desktop\ChangTing\ChangTing\obj\Debug\ChangTing.csprojResolveAssemblyReference.cache
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\roslyn\csc.exe
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\roslyn\vbc.exe
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\roslyn\VBCSCompiler.exe
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Web.dll.config
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Web.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Web.pdb
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\Antlr3.Runtime.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Core.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\Newtonsoft.Json.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.Helpers.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.Mvc.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.Optimization.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.Razor.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.WebPages.Deployment.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.WebPages.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.WebPages.Razor.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\WebGrease.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Core.pdb
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.Helpers.xml
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.Mvc.xml
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.Optimization.xml
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.Razor.xml
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.WebPages.xml
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.WebPages.Deployment.xml
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\System.Web.WebPages.Razor.xml
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\Antlr3.Runtime.pdb
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\Newtonsoft.Json.xml
+C:\Users\luvian\Desktop\ChangTing\ChangTing\obj\Debug\ChangTing.Web.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\obj\Debug\ChangTing.Web.pdb
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\Newtonsoft.Json.pdb
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Admin.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Admin.pdb
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Index.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Music.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Singer.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Users.dll
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Index.pdb
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Music.pdb
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Singer.pdb
+C:\Users\luvian\Desktop\ChangTing\ChangTing\bin\ChangTing.Users.pdb
+D:\@.@\music\trunk\ChangTing\ChangTing\obj\Debug\ChangTing.csprojResolveAssemblyReference.cache
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\roslyn\csc.exe
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\roslyn\System.Collections.Immutable.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\roslyn\System.Reflection.Metadata.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\roslyn\vbc.exe
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\roslyn\VBCSCompiler.exe
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\roslyn\VBCSCompiler.exe.config
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Web.dll.config
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Web.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Web.pdb
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\Antlr3.Runtime.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Admin.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Core.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Index.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Music.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Singer.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Users.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\Microsoft.Web.Infrastructure.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\Newtonsoft.Json.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.Helpers.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.Mvc.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.Optimization.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.Razor.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Deployment.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Razor.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\WebGrease.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Admin.pdb
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Core.pdb
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Index.pdb
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Music.pdb
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Singer.pdb
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.Users.pdb
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.Helpers.xml
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.Mvc.xml
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.Optimization.xml
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.Razor.xml
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.xml
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Deployment.xml
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Razor.xml
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\Antlr3.Runtime.pdb
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\Newtonsoft.Json.pdb
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\Newtonsoft.Json.xml
+D:\@.@\music\trunk\ChangTing\ChangTing\obj\Debug\ChangTing.Web.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\obj\Debug\ChangTing.Web.pdb
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\roslyn\csc.exe
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\roslyn\System.Collections.Immutable.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\roslyn\System.Reflection.Metadata.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\roslyn\vbc.exe
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\roslyn\VBCSCompiler.exe
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\roslyn\VBCSCompiler.exe.config
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Web.dll.config
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Web.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Web.pdb
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\Antlr3.Runtime.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Admin.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Core.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Index.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Music.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Singer.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Users.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\Microsoft.Web.Infrastructure.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\Newtonsoft.Json.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.Helpers.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.Mvc.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.Optimization.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.Razor.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Deployment.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Razor.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\WebGrease.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Admin.pdb
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Core.pdb
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Index.pdb
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Music.pdb
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Singer.pdb
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.Users.pdb
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.Helpers.xml
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.Mvc.xml
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.Optimization.xml
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.Razor.xml
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.xml
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Deployment.xml
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Razor.xml
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\Antlr3.Runtime.pdb
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\Newtonsoft.Json.pdb
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\Newtonsoft.Json.xml
+G:\AAAAA\trunk\ChangTing\ChangTing\obj\Debug\ChangTing.csprojResolveAssemblyReference.cache
+G:\AAAAA\trunk\ChangTing\ChangTing\obj\Debug\ChangTing.Web.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\obj\Debug\ChangTing.Web.pdb
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.UI.dll
+G:\AAAAA\trunk\ChangTing\ChangTing\bin\ChangTing.UI.pdb
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.UI.dll
+D:\@.@\music\trunk\ChangTing\ChangTing\bin\ChangTing.UI.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\roslyn\csc.exe
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\roslyn\System.Collections.Immutable.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\roslyn\System.Reflection.Metadata.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\roslyn\vbc.exe
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\roslyn\VBCSCompiler.exe
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\roslyn\VBCSCompiler.exe.config
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Web.dll.config
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Web.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Web.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\Antlr3.Runtime.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Admin.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Core.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Index.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Music.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Singer.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.UI.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Users.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\Microsoft.Web.Infrastructure.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\Newtonsoft.Json.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.Helpers.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.Mvc.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.Optimization.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.Razor.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Deployment.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Razor.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\WebGrease.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Admin.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Core.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Index.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Music.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Singer.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.UI.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\ChangTing.Users.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.Helpers.xml
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.Mvc.xml
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.Optimization.xml
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.Razor.xml
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.xml
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Deployment.xml
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Razor.xml
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\Antlr3.Runtime.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\Newtonsoft.Json.pdb
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\bin\Newtonsoft.Json.xml
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\obj\Debug\ChangTing.csprojResolveAssemblyReference.cache
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\obj\Debug\ChangTing.Web.dll
+D:\@.@\新建文件夹 (2)\trunk\ChangTing\ChangTing\obj\Debug\ChangTing.Web.pdb
+F:\小组\trunk\ChangTing\ChangTing\bin\roslyn\csc.exe
+F:\小组\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\小组\trunk\ChangTing\ChangTing\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\小组\trunk\ChangTing\ChangTing\bin\roslyn\System.Collections.Immutable.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\roslyn\System.Reflection.Metadata.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\roslyn\vbc.exe
+F:\小组\trunk\ChangTing\ChangTing\bin\roslyn\VBCSCompiler.exe
+F:\小组\trunk\ChangTing\ChangTing\bin\roslyn\VBCSCompiler.exe.config
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Web.dll.config
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Web.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Web.pdb
+F:\小组\trunk\ChangTing\ChangTing\bin\Antlr3.Runtime.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Admin.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Core.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Index.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Music.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Singer.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.UI.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Users.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\Microsoft.Web.Infrastructure.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\Newtonsoft.Json.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.Helpers.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.Mvc.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.Optimization.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.Razor.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Deployment.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Razor.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\WebGrease.dll
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Admin.pdb
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Core.pdb
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Index.pdb
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Music.pdb
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Singer.pdb
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.UI.pdb
+F:\小组\trunk\ChangTing\ChangTing\bin\ChangTing.Users.pdb
+F:\小组\trunk\ChangTing\ChangTing\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.Helpers.xml
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.Mvc.xml
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.Optimization.xml
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.Razor.xml
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.xml
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Deployment.xml
+F:\小组\trunk\ChangTing\ChangTing\bin\System.Web.WebPages.Razor.xml
+F:\小组\trunk\ChangTing\ChangTing\bin\Antlr3.Runtime.pdb
+F:\小组\trunk\ChangTing\ChangTing\bin\Newtonsoft.Json.pdb
+F:\小组\trunk\ChangTing\ChangTing\bin\Newtonsoft.Json.xml
+F:\小组\trunk\ChangTing\ChangTing\obj\Debug\ChangTing.csprojResolveAssemblyReference.cache
+F:\小组\trunk\ChangTing\ChangTing\obj\Debug\ChangTing.Web.dll
+F:\小组\trunk\ChangTing\ChangTing\obj\Debug\ChangTing.Web.pdb

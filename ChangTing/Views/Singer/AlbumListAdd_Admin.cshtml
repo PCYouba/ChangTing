@@ -1,0 +1,147 @@
+﻿@model ChangTing.Singer.Models.AlbumInfo
+@{
+    Layout = "~/Views/Shared/_Backstage.cshtml";
+    ViewBag.Title = "AlbumListAdd";//专辑
+}
+
+@section SectionCss
+{
+    <link href="~/Content/Album/css/AlbumListAdd_Admin.css" rel="stylesheet" />
+}
+
+<article class="page-container" style="overflow:hidden">
+    @using (Html.BeginForm("AlbumListAdd_Admin", "Singer", FormMethod.Post, htmlAttributes: new
+    {
+        enctype = "multipart/form-data",
+        @id = "form-article-add",
+        @class = "form form-horizontal"
+    }))
+    {
+        <input type="hidden" value="@ViewBag.cg" id="myHiddenVar" />//操作结果存储
+        @Html.HiddenFor(Model => Model.AlbumId)//存储专辑Id
+        @Html.HiddenFor(Model => Model.CreateDate)//存储创建时间
+        <input id="singerid" name="singerid" type="hidden" value="@Model.SingerId"/>//存储歌手ID
+
+        if (ViewBag.cg != null)
+        {
+            <script type = "text/javascript" >
+                 alert($('#myHiddenVar').val());
+            </script>
+        };
+
+        <div class="row cl">
+
+            <div class="col-xs-6 col-sm-5">
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-5"><span class="c-red">*</span>专辑名称：</label>
+                    <div class="formControls col-xs-8 col-sm-7 mb-15">
+                        @Html.TextBoxFor(Model => Model.Name, htmlAttributes: new
+                       {
+                           @class = "input-text",
+                           id = "Name",
+                           name = "Name"
+                       })
+                    </div>
+                    <div class="form-label col-xs-8 col-sm-8">
+                        <span class="c-red">@Html.ValidationMessageFor(Model => Model.Name)</span>
+                    </div>
+                </div>
+                
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-5">所属歌手：</label>
+
+                    <div class="col-xs-6 col-sm-7 mb-15">
+                        
+                        @if (ViewBag.singer != null)
+                        {
+                            ChangTing.Singer.Models.SingerInfo singerinfo = (ChangTing.Singer.Models.SingerInfo)ViewBag.singer;
+                            <input class="input-text lest-text" id="singername" name="singername" value= "@singerinfo.Name"/>
+                        }
+                        else
+                        {
+                            <input class="input-text lest-text" id="singername" name="singername"/>
+                        }
+                        <div id="list-text-button" >
+                           <div id="list-text-button-sanjiao" class=""></div>
+                        </div>
+
+                        <div id="list-textlist">
+                            <div>
+                                @if (ViewBag.SingerName != null)
+                                {
+                                    foreach (ChangTing.Singer.Models.SingerInfo item in ViewBag.SingerName)
+                                    {
+                                        <a value="@item.SingerId">@item.Name</a>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-label col-xs-8 col-sm-8">
+                        <span class="c-red">@Html.ValidationMessageFor(Model => Model.SingerId)</span>
+                    </div>
+                </div>
+                <div class="row cl">
+
+                    <label class="form-label col-xs-5 col-sm-5" >发行时间：</label>
+
+                        
+                   <div class="text-c col-xs-5 col-sm-5 mb-15">
+                        @Html.TextBoxFor(Model => Model.Issue, htmlAttributes: new
+                        {
+                           @class = "input-text Wdate",
+                           id = "Issue",
+                           name = "Issue",
+                           onfocus = "WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#{%y-60}-%M-%d',maxDate:'%y-%M-%d'})",
+                       })
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <label class="form-label">专辑头像：</label>
+            </div>
+            <div class="col-xs-2 col-sm-2">
+                <div class="formControls col-xs-8 col-sm-9">
+                    <div class="uploader-thum-container">
+                        <div class="image_container ">
+                            <input type="file" class="my-file" id="file_upload" name="file_upload" value="@ViewBag.Image" style="height:280px;width:280px;" />
+                            <input type="hidden" name="df" id="df" value="@ViewBag.Image" />
+                            <img id="preview" name="preview" class="row cl" style="height:20em;width:20em;padding:0;margin:0;left:0" src="@Model.Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br />
+
+        <label class="form-label col-xs-4 col-sm-2">专辑介绍：</label>
+        <div class="form-label col-xs-8 col-sm-8">
+            <span class="c-red">@Html.ValidationMessageFor(Model => Model.Introduce)</span>
+        </div>
+        <div class="row cl">
+            <div class="formControls col-xs-8 col-sm-9">
+                <script id="editor" name="editor" type="text/plain" style="height:400px;width:100%">
+                    @Html.Raw(ViewBag.editortext)
+                </script>
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                <button class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 提交</button>
+                <button onClick="removeIframe();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    
+    }
+
+</article>
+
+@section SectionJs
+{
+    <script type="text/javascript" src="~/Content/Album/js/AlbumListAdd_Admin.js"></script>
+
+    @*弹出框js*@
+    <script src="~/Content/Hui/lib/bootstrap-modal/2.2.4/bootstrap-modal.js"></script>
+    <script src="~/Content/Hui/lib/bootstrap-modal/2.2.4/bootstrap-modalmanager.js"></script>
+}

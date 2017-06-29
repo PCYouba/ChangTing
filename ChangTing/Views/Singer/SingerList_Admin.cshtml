@@ -1,0 +1,125 @@
+﻿@model IList<ChangTing.Singer.Models.SingerInfo>
+@{
+    Layout = "~/Views/Shared/_Backstage.cshtml";
+    ViewBag.Title = "SingerList";
+}
+
+@section SectionCss
+{
+    @* 自己的css样式 *@
+    <link href="~/Content/Singer/css/SingerList_Admin.css" rel="stylesheet" />
+}
+<div style="margin:0 0 0 46px">
+    <div class="pos-r">
+        <nav class="breadcrumb">
+            <i class="Hui-iconfont">&#xe67f;</i>
+                首页
+            <span class="c-gray en">&gt;</span>
+                歌手管理
+            <span class="c-gray en">&gt;</span>
+                歌手列表
+            <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新">
+                <i class="Hui-iconfont">&#xe68f;</i>
+            </a>
+        </nav>
+        <div class="page-container">
+            <div class="cl pd-5 bg-1 bk-gray mt-20 Hui-asidezdy">
+                <span class="l Hui-asidezdyys">
+                    <a href="javascript:;" onclick=datadel() class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+                    <a class="btn btn-primary radius" _href="../Singer/SingerListAdd_Admin?singerid=0" data-title="添加歌手" href="javascript:void(0)"><i class="Hui-iconfont">&#xe600;</i> 添加歌手</a>
+                </span>
+                <span class="r">共有数据：<strong>@Model.Count</strong> 条</span>
+            </div>
+            <div class="mt-20" style="font-size:48px">
+                <table class="table table-border table-bordered table-bg table-hover table-sort">
+                    <thead>
+                        <tr class="text-c">
+                            <th width="30"><input name="" type="checkbox" value=""></th>
+                            <th width="40">歌手ID</th>
+                            <th width="50">头像</th>
+                            <th width="50">姓名</th>
+                            <th width="40">歌手性别</th>
+                            <th width="40">歌手年龄</th>
+                            <th width="90">歌手自我介绍</th>
+                            <th width="80">操作(专辑、编辑、删除)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            ChangTing.Core.ViewModels.Html_Sting html = new ChangTing.Core.ViewModels.Html_Sting();
+                            foreach (ChangTing.Singer.Models.SingerInfo item in @Model)
+                            {
+                                string introduction = string.Empty;
+                                if (!item.Introduce.IsEmpty())
+                                {
+                                    introduction = html.toHTMLString(item.Introduce);
+                                }
+
+                                if (introduction == string.Empty) { introduction = "这个歌手什么都没有留下哦~~"; }
+                                else if (introduction.Length > 20){ introduction = introduction.Substring(0, 20) + "……"; }
+                                <tr class="text-c va-m">
+                                    <td><input name="piliang" type="checkbox" value="@item.SingerId"></td>@*选择按钮*@
+                                    <td>@item.SingerId</td>@*ID*@
+                                    <td class="Hui-asidezdy">
+                                        <span class="Hui-asidezdyys">
+                                            <a _href="../Singer/SingerListAdd_Admin?singerid=@item.SingerId" href="javascript:void(0)" data-title="修改信息">
+                                                <img src="@item.HeadPortrait" style="width:66px;height:66px;line-height:66px" title="歌手详情" />
+                                            </a>
+                                        </span>
+                                    </td>@*头像*@
+                                    <td>@item.Name</td>@*姓名*@
+                                @{ 
+                                    if (item.Gender == 0)
+                                    {
+                                        <td>保密</td>
+                                    }
+                                    else if (item.Gender == 1)
+                                    {
+                                        <td>男</td> 
+                                    }
+                                    else
+                                    {
+                                        <td>女</td>
+                                    }
+                                }@*歌手性别*@
+
+                                @if (item.Age.IsEmpty())
+                                {
+                                    <td>保密</td>
+                                }
+                                else
+                                {
+                                    <td>@item.Age</td>@*歌手年龄*@
+                                }
+                                <td>@Html.Raw(@introduction)</td>@*歌手自我介绍*@
+                                <td class="td-manage  Hui-asidezdy">
+                                    <span class="Hui-asidezdyys">
+                                        <a style="text-decoration:none" class="ml-5" data-title="专辑信息" _href="../Singer/AlbumList_Admin?singerid=@item.SingerId" href="javascript:void(0)" title="专辑信息">
+                                            <i class="Hui-iconfont">&#xe626;</i>@*"_href不能加"*@
+                                        </a>
+                                    </span>
+                                    <span class="Hui-asidezdyys">
+                                        <a style="text-decoration:none" class="ml-5" data-title="修改信息" _href="../Singer/SingerListAdd_Admin?singerid=@item.SingerId" href="javascript:void(0)" title="编辑">
+                                            <i class="Hui-iconfont">&#xe6df;</i>@*"_href不能加"*@
+                                        </a>
+                                    </span>
+                                    <a style="text-decoration:none" class="ml-5" onClick="product_del(this, @item.SingerId)" href="javascript:;" title="删除">
+                                        <i class="Hui-iconfont">&#xe6e2;</i>
+                                    </a>
+                                </td>
+                            </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section SectionJs
+{
+    @* 自己的Js样式 *@
+    <script type="text/javascript" src="~/Content/Singer/js/SingerList_Admin.js"></script>
+}
+

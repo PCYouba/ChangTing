@@ -1,0 +1,79 @@
+﻿@model ChangTing.Users.Models.UsersInfo
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" type="text/css" href="~/Content/UI/css/PersonalSetting.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/UI/css/Register.css" />
+    <title>Register</title>
+</head>
+<body>
+
+<h1>注册用户 </h1>
+
+@using (Html.BeginForm("Register", "UI", FormMethod.Post, htmlAttributes: new { enctype = "multipart/form-data" }))
+{
+    <div class="neibu">
+        <div class="xinxi">
+            登陆名称：
+            <span class="input">
+                @Html.TextBoxFor(Model => Model.LoginName ,htmlAttributes: new { @class = "input" }) <span class="red">*</span> <br />
+
+            </span>
+           
+            密　　码：
+            <apan class="input">
+              @Html.PasswordFor(Model => Model.PassWord, htmlAttributes: new { @class = "input" }) <span class="red">*</span><br />
+            </apan>
+             确认密码：
+                <input type="password"  id="Pass" name="Pass" class = "input"/> <span class="red">*</span> @ViewBag.hintpass<br />
+                    
+             昵　　称：
+            <span class="input">
+                @Html.TextBoxFor(Model => Model.NickName, htmlAttributes: new { @class = "input" })<span class="red">*</span> <br />
+            </span>
+            头　　像：
+            <span class="input">
+                <input type="file"  id="file_upload" name="file_upload" value="@ViewBag.imgfile" style="height:20px;width:280px;" />
+                <input type="hidden" name="df" id="df" value="@ViewBag.imgfile"  /><br />
+            </span>
+
+             介　　绍：<br />
+            <apan class="input">
+                @Html.TextAreaFor(Model => Model.Introduce, htmlAttributes: new { @class = "kuang" }) <br />
+            </apan>
+            性　　别：
+            <apan class="input">
+                @Html.RadioButtonFor(Model => Model.Gender, 0, new { @id = "SEX1", @name = "SEX" }) 保密
+                @Html.RadioButtonFor(Model => Model.Gender, 1, new { @id = "SEX1", @name = "SEX" }) 男
+                @Html.RadioButtonFor(Model => Model.Gender, 2, new { @id = "SEX2", @name = "SEX" }) 女
+            </apan><br />
+             出生日期：
+            <apan class="input">
+                <input type="date"  name="birthday" value="1900-01-11"/>
+            </apan><br />
+            
+            家住地址：
+            <apan class="input">
+                @Html.Partial("_Address")
+                <span class="red">*</span>
+            </apan>
+
+        <div class="tj-btn">
+
+            <input type="submit" name="" class="xinxi-btn" value="注册" />
+            <input type="button" name="" class="xinxi-btn" value="返回"  onclick='window.open("login")' />
+
+        </div>
+           
+    </div>
+        </div>
+}
+</body>
+</html>
